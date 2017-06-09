@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;sensorOne&apos; in &apos;ArduRCJ.readLightLeft()&apos; to &apos;sensorLeft&apos;&#x0D;&#x0A;- Original project: &apos;rescue2012&apos;&#x0D;&#x0A;- Original element: &apos;ArduRCJ.readLightLeft().sensorOne&apos;&#x0D;&#x0A;- Renamed element: &apos;sensorOne&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;sensorOne&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{ArduRCJ.java[ArduRCJ~readLightLeft@sensorOne!2878!2954!2882!2890!I" name="sensorLeft" references="true" stamp="1334361915012" version="1.0"/>
+</session>

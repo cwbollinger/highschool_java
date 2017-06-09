@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;background_large.jpg&apos; to &apos;images&apos;&#x0D;&#x0A;- Original project: &apos;DevGames_ch02&apos;&#x0D;&#x0A;- Destination element: &apos;images&apos;&#x0D;&#x0A;- Original element: &apos;background_large.jpg&apos;" description="Copy file" element1="images/background_large.jpg" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1349798324591" target="/DevGames_ch03/images" units="0" version="1.0"/>
+</session>

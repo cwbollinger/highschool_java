@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="451" key="RevertDialog.size.y"/>
+	<item value="525" key="RevertDialog.size.x"/>
+	<item value="60" key="HistoryTableProvider.SVNHistoryPage.Revision"/>
+	<item value="165" key="SetSvnPropertyDialog.location.y"/>
+	<item value="578" key="SetSvnPropertyDialog.location.x"/>
+	<item value="606" key="SwitchDialogWithConflictHandling.size.x"/>
+	<item value="714" key="SwitchDialogWithConflictHandling.size.y"/>
+	<item value="298" key="HistoryTableProvider.SVNHistoryPage.Comment"/>
+	<item value="93" key="CommitDialog.location.y"/>
+	<item value="465" key="CommitDialog.location.x"/>
+	<item value="395" key="RevertDialog.location.x"/>
+	<item value="" key="DirectorySelectionPage.lastParent_https://think-academy.googlecode.com/svn/trunk"/>
+	<item value="500" key="CommitDialog.weights.0"/>
+	<item value="500" key="CommitDialog.weights.1"/>
+	<item value="193" key="RevertDialog.location.y"/>
+	<item value="525" key="SetSvnPropertyDialog.size.x"/>
+	<item value="518" key="SetSvnPropertyDialog.size.y"/>
+	<item value="624" key="CommitDialog.size.y"/>
+	<item value="150" key="HistoryTableProvider.SVNHistoryPage.Date"/>
+	<item value="859" key="CommitDialog.size.x"/>
+	<item value="119" key="HistoryTableProvider.SVNHistoryPage.Author"/>
+	<item value="https://think-academy.googlecode.com/svn/trunk/soccer2013" key="UrlCombo.soccer2013.0"/>
+	<item value="https://think-academy.googlecode.com/svn/trunk" key="RepositorySelectionPage.lastRepository"/>
+	<item value="0" key="SwitchDialogWithConflictHandling.location.y"/>
+	<item value="358" key="SwitchDialogWithConflictHandling.location.x"/>
+	<section name="CommitWizard">
+		<item value="500" key="VWeight2"/>
+		<item value="500" key="VWeight1"/>
+		<item value="false" key="ShowCompare"/>
+	</section>
+	<section name="IgnoreResourcesDialog">
+		<item value="2" key="Action"/>
+	</section>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="https://think-academy.googlecode.com/svn/trunk/"/>
+		</list>
+	</section>
+</section>

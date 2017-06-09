@@ -1,0 +1,76 @@
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.awt.event.KeyEvent;
+import java.util.Scanner;
+
+public class TextMap {
+	protected static final int MAPSIZE = 11;
+ 
+	public static void displayMap(char[][] map, int mapsize)
+	{
+		for(int y = 0; y < mapsize; y++) {
+			for(int x = 0; x < mapsize; x++) {
+				System.out.print(map[x][y]);
+			}
+			System.out.println();
+		}
+	}
+  
+	public static void initializeRandomMap(char[][] map, int mapsize)
+	{
+		double rand;
+		for(int y = 0; y < mapsize; y++) {
+			for(int x = 0; x < mapsize; x++) {
+				rand = Math.random();
+				if (rand >= 0.65){
+					map[x][y] = 'M';
+				} else {
+					map[x][y] = '~';
+				}
+			}
+	    }  
+	}
+  
+	public static void initializeFlatMap(char[][] map, int mapsize)
+	{
+		
+		for(int y = 0; y < mapsize; y++) {
+			for(int x = 0; x < mapsize; x++) {
+				map[x][y] = '#';
+			}
+		}  
+		for(int y = 1; y < (mapsize)-1; y++) {
+			for(int x = 1; x < (mapsize-1); x++) {
+				map[x][y] = '+';
+			}
+		} 
+	} 
+
+	public static void main(String[] args) throws IOException {
+	  char map[][] = new char[MAPSIZE][MAPSIZE];
+	  Adventurer adv_1 = new Adventurer();
+	  Scanner sc = new Scanner(System.in);
+	  int input;
+	  initializeFlatMap(map, MAPSIZE);
+	  displayMap(map, MAPSIZE);
+	  while(true) {
+		  map[adv_1.x][adv_1.y] = '@';
+		  displayMap(map, MAPSIZE);
+		  map[adv_1.x][adv_1.y] = '+';
+		  System.out.println(adv_1.x + "," + adv_1.y);
+		  input = sc.nextInt();
+		  switch(input) {
+		  case 8:
+			  adv_1.up();
+		  case 6:
+			  adv_1.right();
+		  case 2:
+			  adv_1.down();
+		  case 4:
+			  adv_1.left();
+		  }
+
+	  }  
+  }	
+}

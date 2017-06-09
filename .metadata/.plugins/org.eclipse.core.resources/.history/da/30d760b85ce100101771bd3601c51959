@@ -1,0 +1,18 @@
+
+public class Adventurer {
+	int adv_x = 5;
+	int adv_y = 5;
+	
+	public void left() {
+		this.adv_x--;
+	}
+	public void right() {
+		this.adv_x++;
+	}
+	public void up() {
+		this.adv_y--;
+	}
+	public void down() {
+		this.adv_y++;
+	}
+}

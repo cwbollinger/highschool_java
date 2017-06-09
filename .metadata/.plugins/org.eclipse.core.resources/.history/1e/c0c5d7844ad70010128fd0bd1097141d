@@ -1,0 +1,130 @@
+import com.ibm.rally.Car;
+import com.ibm.rally.ICar;
+import com.ibm.rally.IObject;
+/**
+ * This is the class that you must implement to enable your car within
+ * the CodeRally track. Adding code to these methods will give your car
+ * it's personality and allow it to compete.
+ */
+public class RallyCar extends Car {
+	protected int wait;
+	protected boolean gas_searching;
+	protected static final int ATSTATION = -1;
+	protected boolean refueling;
+	protected int state;
+	protected int h;
+	protected int n;
+	protected double enemy_dist;
+
+	/**
+	 * @see com.ibm.rally.Car#getColor()
+	 */
+	public byte getColor() {
+		return CAR_YELLOW;
+	}
+
+	/**
+	 * @see com.ibm.rally.Car#initialize()
+	 */
+	public void initialize() {
+		wait = 0;
+		gas_searching = false;
+		refueling = false;
+		state = 1;
+		n = 0;
+		
+	}
+	
+	public int FindGas() {
+		double x = getDistanceTo(getFuelDepots()[0]);
+		double y = getDistanceTo(getFuelDepots()[1]); 
+		double z = getDistanceTo(getFuelDepots()[2]);
+		if((x < 30) || (y < 30) || (z < 30)) {
+			return ATSTATION;
+		}
+		if(x < y) {
+			if(x < z) {
+				return (getHeadingTo(getFuelDepots()[0]));
+			} else {
+				return (getHeadingTo(getFuelDepots()[2]));
+			}
+		} else {
+			return (getHeadingTo(getFuelDepots()[1]));
+		}
+	}
+
+	/**
+	 * @see com.ibm.rally.Car#move(int, boolean, ICar, ICar)
+	 * Put the car in reverse for a few moves if you collide with another car.
+	 * Go toward the first gas depot.
+	 */
+	
+	public void move(int lastMoveTime, boolean hitWall, ICar collidedWithCar, ICar hitBySpareTire) {
+		/*
+		if((collidedWithCar != null) || hitWall) {
+		    wait = 10;
+		}
+		if(wait > 0) {
+			setThrottle(MIN_THROTTLE);
+			setSteeringSetting(MAX_STEER_RIGHT);
+			wait--;
+		} else {
+			setThrottle(MAX_THROTTLE);
+		*/
+		if(state == 1) {
+			setThrottle(MAX_THROTTLE);
+			if(getPreviousCheckpoint() == (getCheckpoints().length-1)) {
+				h = getHeadingTo(getCheckpoints()[0]);
+			} else {
+				h = getHeadingTo(getCheckpoints()[getPreviousCheckpoint()+1]);
+			}
+			int x = (getHeading() - h)/2;
+			if(x > 10) {
+				x = 10;
+			} else if(x < -10) {
+				x = -10;
+			}
+			setSteeringSetting(-x);
+			
+			if((getFuel() < 10) && (getClockTicks() < 500)) {
+				state = 2;
+			}
+			if(!isInProtectMode()) {
+				n = getOpponents().length;
+				for(; n > 0; n--) {
+					enemy_dist = getDistanceTo(getOpponents()[n-1]);
+					if(enemy_dist < 10) {
+						state = 4;
+						break;
+					}
+				}
+			}
+		}
+		if(state == 2) {
+			setThrottle(30);
+			h = FindGas();
+			
+			if(h == ATSTATION) {
+				state = 3;
+			} else {
+				int x = (getHeading() - h)/2;
+				if(x > 10) {
+					x = 10;
+				} else if(x < -10) {
+					x = -10;
+				}
+				setSteeringSetting(-x);
+			}
+		}
+		if (state == 3) {
+			setThrottle(0);
+			if(getFuel() > 60) {
+				state = 1;
+			}
+		}
+		if(state == 4) {
+			enterProtectMode();
+			state = 1;
+		}
+	}
+}

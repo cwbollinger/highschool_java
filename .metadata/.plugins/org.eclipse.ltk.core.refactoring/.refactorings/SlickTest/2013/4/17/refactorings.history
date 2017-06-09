@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;firstJumpTime&apos; in &apos;slick.path2glory.tutorial1.Player&apos; to &apos;jumpTime&apos;&#x0D;&#x0A;- Original project: &apos;SlickTest&apos;&#x0D;&#x0A;- Original element: &apos;slick.path2glory.tutorial1.Player.firstJumpTime&apos;&#x0D;&#x0A;- Renamed element: &apos;slick.path2glory.tutorial1.Player.jumpTime&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;firstJumpTime&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;slick.path2glory.tutorial1{Player.java[Player^firstJumpTime" name="jumpTime" references="true" setter="false" stamp="1366645490002" textual="false" version="1.0"/>
+</session>

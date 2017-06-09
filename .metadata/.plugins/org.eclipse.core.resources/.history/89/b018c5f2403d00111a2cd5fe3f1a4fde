@@ -1,0 +1,104 @@
+import lejos.nxt.*;
+import lejos.nxt.comm.RConsole;
+
+
+public class StateLineFollow extends State{
+	
+	private static StateLineFollow instance = new StateLineFollow();
+	
+	private StateLineFollow() {
+	}
+	
+	private static StateLineFollow getInstance () {
+		return instance;
+	}
+
+	
+	public void enter(Robot robot) {
+		LCD.drawString("Robot: StateLineFollow enter", 0, 0);
+	}
+
+	public void execute(Robot robot) {
+		LCD.drawString("Robot: StateLineFollow execute", 0, 0);
+		
+		int lightVal;
+		String msg;
+		//Kc = 10 Pc = .3 dT = .00159
+		final double Kp = 6;
+		final double Ki = 0.0636;
+		final double Kd = 141.5;
+		final int Tp = 75;
+		final int offset = 40; //value of black reading: sets zero error.
+		
+		int integral = 0;
+		int lastError = 0;
+		int derivative = 0;
+		int error = 0;
+		
+		int Turn = 0;
+		int powerA = 0;
+		int powerB = 0;
+		
+		
+		//RConsole.openUSB(20000);
+		//RConsole.println("Connected!");
+		try {
+			Thread.sleep(5000);
+		}
+		catch (InterruptedException e){
+			LCD.drawString("ERROR: Thread.sleep() failed", 0, 0);
+			LCD.drawString("" + e, 0, 0);
+		}
+		
+		
+		while(!Button.ESCAPE.isPressed()) {
+			lightVal = robot.light.getLightValue();
+			
+			if(error == 0) {
+				integral = 0;
+			}
+			
+		    error = lightVal-offset;
+		    integral = integral + error;
+			derivative = error-lastError;
+			Turn = (int)(Kp*error+Ki*integral+Kd*derivative);
+			powerA = Tp+Turn;
+			powerB = Tp-Turn;
+			
+			msg = "" + Kp*error + ", " + Ki*integral;
+			//RConsole.println(msg);
+
+			
+			if(powerA>0){
+			robot.motA.setPower(powerA);
+			robot.motA.forward();
+			} else {
+				powerA=powerA*(-1);
+				robot.motA.setPower(powerA);
+				robot.motA.backward();
+			}
+			if(powerB>0){
+				robot.motB.setPower(powerB);
+				robot.motB.forward();
+				} else {
+					powerB=powerB*(-1);
+					robot.motB.setPower(powerB);
+					robot.motB.backward();
+				}
+			
+			lastError = error;
+		}
+		
+		
+		
+		
+		
+		robot.changeState(StateBackward.getInstance());
+	}
+
+	public void exit(Robot robot) {
+		LCD.drawString("Robot: StateLineFollow exit", 0, 0);
+	}
+	
+}
+

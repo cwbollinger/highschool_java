@@ -1,0 +1,185 @@
+package slick.path2glory.tutorial1;
+
+import java.awt.Toolkit;
+import java.util.ArrayList;
+
+import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.BasicGame;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.*;
+
+public class SlickBasicGame extends BasicGame {
+
+	static int SCREEN_HEIGHT = Toolkit.getDefaultToolkit().getScreenSize().height;
+	static int SCREEN_WIDTH = Toolkit.getDefaultToolkit().getScreenSize().width;
+
+	ArrayList<CollidableImageObject> platforms = null;
+	final int numPlatforms = 4;
+
+	Player awesomeFace = null;
+
+	PainBox ouch = null;
+
+	// CollidableImageObject awesomeFace = null;
+
+	Image awesomeFaceImg = null;
+	Image[] awesomeFaceAnim = null;
+	Image platformImg = null;
+
+	float awesomeFaceStartX = 400;
+	float awesomeFaceStartY = 200;
+
+	float deltaX = 0;
+	float deltaY = 0;
+
+	float scale = 1;
+
+	long time;
+	long elapsedTime;
+
+	// Vector2f awesomeFaceVel;
+
+	public SlickBasicGame() {
+		super("Slick2D Path2Glory - SlickBasicGame");
+	}
+
+	@Override
+	public void init(GameContainer gc) throws SlickException {
+
+		// awesomeFaceVel = new Vector2f(0, 0);
+
+		time = gc.getTime();
+		elapsedTime = gc.getTime();
+
+		platformImg = new Image("data/test_tile_mid.png");
+		awesomeFaceImg = new Image("data/AF_N/AF_N1.png");
+		awesomeFaceAnim = new Image[1];
+		awesomeFaceAnim[0] = awesomeFaceImg;
+
+		Vector2f awesomeFacePos = new Vector2f(awesomeFaceStartX,
+				awesomeFaceStartY);
+		Circle awesomeFaceHitsphere = new Circle(awesomeFaceImg.getWidth() / 2,
+				awesomeFaceImg.getHeight() / 2, awesomeFaceImg.getWidth() / 2);
+
+		awesomeFace = new AwesomeFace(awesomeFacePos, awesomeFaceHitsphere, 1);
+
+		Vector2f platformPos;
+		Rectangle platformHitbox = new Rectangle(0, 0, platformImg.getWidth(),
+				platformImg.getHeight());
+
+		platforms = new ArrayList<CollidableImageObject>();
+		for (int i = 0; i < numPlatforms; i++) {
+			platformPos = new Vector2f(200 + i * 200, 150 + i * 150);
+			platforms.add(new CollidableImageObject("Floor" + i, platformImg,
+					platformPos, platformHitbox, 1));
+
+		}
+		platforms.add(new CollidableImageObject("Floor", platformImg,
+				new Vector2f(200, 500), platformHitbox, 1));
+		ouch = new PainBox(new Vector2f(250, 440));
+	}
+
+	@Override
+	public void update(GameContainer gc, int delta) throws SlickException {
+		
+		elapsedTime = gc.getTime();
+		elapsedTime -= time;
+		// System.out.println(elapsedTime);
+
+		deltaX = 0;
+		deltaY = 0;
+
+		Input input = gc.getInput();
+		
+		if (input.isKeyDown(Input.KEY_ESCAPE)) {
+			gc.exit();
+		}
+		
+		String commands = "";
+		
+		if (input.isKeyDown(Input.KEY_W)) {
+			commands += "UP";
+		} else if (input.isKeyDown(Input.KEY_S)) {
+			commands += "DOWN";
+		} else if (input.isKeyDown(Input.KEY_A)) {
+			commands += "LEFT";
+		} else if (input.isKeyDown(Input.KEY_D)) {
+			commands += "RIGHT";
+		}
+		
+		Vector2f newPos = awesomeFace.updatePlayer(commands, elapsedTime, delta);
+
+		if (awesomeFace.isCollidingWith(ouch)) {
+			awesomeFace.damagePercent += 1;
+			System.out.println(awesomeFace.damagePercent);
+			awesomeFace.playerVel.x *= -3;
+			awesomeFace.playerVel.y *= -3;
+		}
+		Vector2f oldPos = awesomeFace.getPosition();
+		awesomeFace.setPosition(newPos);
+
+		if (checkCollisions()) {
+			awesomeFace.playerVel.y = 0;
+			awesomeFace.setPosition(new Vector2f(awesomeFace.getPosition().x
+					- deltaX, awesomeFace.getPosition().y - deltaY));
+			awesomeFace.jumpNum = 2;
+			awesomeFace.fallTime = 0;
+		} else {
+
+			if (awesomeFace.fallTime == 0) {
+				awesomeFace.fallTime = elapsedTime;
+			} else if ((awesomeFace.jumpNum == 2)
+					&& ((elapsedTime - awesomeFace.fallTime) > 110)) {
+				awesomeFace.jumpNum--;
+				System.out.println("Fell off platform");
+			}
+
+		}
+
+		if ((awesomeFace.getPosition().x < -100)
+				|| (awesomeFace.getPosition().y < -100)
+				|| (awesomeFace.getPosition().x > SCREEN_WIDTH + 100)
+				|| (awesomeFace.getPosition().y > SCREEN_HEIGHT + 100)) {
+			awesomeFace.setPosition(new Vector2f(awesomeFaceStartX,
+					awesomeFaceStartY));
+			awesomeFace.playerVel = new Vector2f(0, 0);
+		}
+
+	}
+
+	private boolean checkCollisions() { // returns true if a collision has
+										// occurred
+		for (int i = 0; i < platforms.size(); i++) {
+			if (awesomeFace.isCollidingWith(platforms.get(i))) {
+				// System.out.println("Collided #"+i);
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private void drawPlatforms(Graphics g) {
+		for (int i = 0; i < platforms.size(); i++) {
+			platforms.get(i).render(g);
+		}
+	}
+
+	public void render(GameContainer gc, Graphics g) throws SlickException {
+
+		drawPlatforms(g);
+		awesomeFace.render(g);
+		ouch.render(g);
+
+	}
+
+	public static void main(String[] args) throws SlickException {
+		AppGameContainer app = new AppGameContainer(new SlickBasicGame());
+
+		app.setDisplayMode(SCREEN_WIDTH, SCREEN_HEIGHT, true);
+		app.start();
+	}
+}

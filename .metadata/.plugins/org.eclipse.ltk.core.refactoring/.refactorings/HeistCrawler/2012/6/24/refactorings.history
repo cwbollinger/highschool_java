@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;keys&apos; in &apos;InputManager&apos; to &apos;pressedKeys&apos;&#x0D;&#x0A;- Original project: &apos;HeistCrawler&apos;&#x0D;&#x0A;- Original element: &apos;InputManager.keys&apos;&#x0D;&#x0A;- Renamed element: &apos;InputManager.pressedKeys&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;keys&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{InputManager.java[InputManager^keys" name="pressedKeys" references="true" setter="false" stamp="1339797753338" textual="false" version="1.0"/>
+</session>

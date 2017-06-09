@@ -1,0 +1,16 @@
+package slick.path2glory.tutorial1;
+
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Shape;
+import org.newdawn.slick.geom.Vector2f;
+
+public class AwesomeFace extends Player {
+
+	public AwesomeFace(String animFolder, Vector2f pos,
+			Shape hitShape, int hitType, int numImages, int animSpeed)
+			throws SlickException {
+		super("AwesomeFace", animFolder, pos, hitShape, hitType, numImages, animSpeed);
+		// TODO Auto-generated constructor stub
+	}
+
+}

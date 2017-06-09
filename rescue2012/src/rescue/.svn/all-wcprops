@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/151/trunk/rescue2012/src/rescue
+END
+StateFindCan.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/140/trunk/rescue2012/src/rescue/StateFindCan.java
+END
+Map2D.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/137/trunk/rescue2012/src/rescue/Map2D.java
+END
+StateForward.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/StateForward.java
+END
+StateLineFollowRegulated.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/StateLineFollowRegulated.java
+END
+StateExit.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/146/trunk/rescue2012/src/rescue/StateExit.java
+END
+WaveFront.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/130/trunk/rescue2012/src/rescue/WaveFront.java
+END
+StateLineFollow.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/147/trunk/rescue2012/src/rescue/StateLineFollow.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/Util.java
+END
+StateLineFollowSingle.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/StateLineFollowSingle.java
+END
+StateBackward.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/StateBackward.java
+END
+StateCommand.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/154/trunk/rescue2012/src/rescue/StateCommand.java
+END
+StateAvoidObstacle.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/114/trunk/rescue2012/src/rescue/StateAvoidObstacle.java
+END
+State.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/State.java
+END
+StateGridRunCornersNew.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/145/trunk/rescue2012/src/rescue/StateGridRunCornersNew.java
+END
+Main.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/146/trunk/rescue2012/src/rescue/Main.java
+END
+Robot.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/154/trunk/rescue2012/src/rescue/Robot.java
+END
+StateGridRunNew.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/147/trunk/rescue2012/src/rescue/StateGridRunNew.java
+END
+StateFindPlatform.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/145/trunk/rescue2012/src/rescue/StateFindPlatform.java
+END
+StateUltrasonicSweep.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/StateUltrasonicSweep.java
+END
+StateFindLine.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/106/trunk/rescue2012/src/rescue/StateFindLine.java
+END
+ArduRCJ.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/144/trunk/rescue2012/src/rescue/ArduRCJ.java
+END
+Obstacle.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/100/trunk/rescue2012/src/rescue/Obstacle.java
+END
+StateStart.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/119/trunk/rescue2012/src/rescue/StateStart.java
+END

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;mapsize&apos; in &apos;TextMap&apos; to &apos;mapSize&apos;&#x0D;&#x0A;- Original project: &apos;TextMap&apos;&#x0D;&#x0A;- Original element: &apos;TextMap.mapsize&apos;&#x0D;&#x0A;- Renamed element: &apos;TextMap.mapSize&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;mapsize&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{TextMap.java[TextMap^mapsize" name="mapSize" references="true" setter="false" stamp="1315334728266" textual="false" version="1.0"/>
+</session>

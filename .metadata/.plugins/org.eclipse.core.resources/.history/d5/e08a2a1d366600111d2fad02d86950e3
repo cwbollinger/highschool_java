@@ -1,0 +1,101 @@
+
+public class WaveFront {
+	
+	Map2D map;
+	
+	
+	public WaveFront(Map2D scanMap) {
+		map = scanMap;
+	}
+	
+	int goalX;
+	int goalY;
+	
+	int robotX;
+	int robotY;
+	
+	public int[][] setPath() {
+		
+		
+		int up;
+		int upRight;
+		int right;
+		int downRight;
+		int down;
+		int downLeft;
+		int left;
+		int upLeft;
+		int center;
+		
+		
+		
+		for(int i = 0; i < Map2D.COLS; i++) {
+			for(int j = 0; j < Map2D.ROWS; j++) {
+				
+				if(map.grid[i][j] == 0) { //find final goal
+					goalX = i;
+					goalY = j;
+				}
+				if(map.grid[i][j] == 8) { //find robot pos
+					robotX = i;
+					robotY = j;
+				}
+			}
+		}
+		for(int i = 1; i < Map2D.COLS-1; i++) {
+			for(int j = 1; j < Map2D.ROWS-1; j++) {
+				
+				center = map.grid[i][j];
+				up = map.grid[i][j + 1];
+				upRight = map.grid[i + 1][j + 1];
+				right = map.grid[i + 1][j];
+				downRight = map.grid[i + 1][j - 1];
+				down = map.grid[i][j - 1];
+				downLeft = map.grid[i - 1][j - 1];
+				left = map.grid[i - 1][j];
+				upLeft = map.grid[i - 1][j + 1];
+				
+				if ((up == 8)&&(center != 9)) {
+					
+				} else if ((upRight == 8)&&(center != 9)) {
+					
+				} else if ((right == 8)&&(center != 9)) {
+					
+				} else if ((downRight == 8)&&(center != 9)) {
+					
+				} else if ((down == 8)&&(center != 9)) {
+					
+				} else if ((downLeft == 8)&&(center != 9)) {
+					
+				} else if ((left == 8)&&(center != 9)) {
+					
+				} else if ((upLeft == 8)&&(center != 9)) {
+					
+				}
+			}
+		}
+		return map.grid;
+	}
+	
+	private int setSquare(int val, int replace) {
+		switch(val) {
+		case 0:
+			return replace;
+		case 1:
+			return val;
+		case 2:
+			return val;
+		case 3:
+			return val;
+		case 4:
+			return val;
+		default:
+			return val;
+		}		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+	
+}

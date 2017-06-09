@@ -1,0 +1,24 @@
+package slick.path2glory.tutorial1;
+
+import org.newdawn.slick.Image;
+import org.newdawn.slick.geom.Shape;
+import org.newdawn.slick.geom.Vector2f;
+
+/***
+ * 
+ * @author Chris
+ * 
+ * This class is for a test object that inflicts damage on the player.
+ *
+ */
+
+
+public class PainBox extends CollidableImageObject {
+
+	public PainBox(String name, Image image, Vector2f position,
+			Shape collisionShape, int collisionType) {
+		super(name, image, position, collisionShape, collisionType);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,110 @@
+
+public class WaveFront {
+	
+	Map2D map;
+	
+	
+	public WaveFront(Map2D floorplan) {
+		map = floorplan;
+	}
+	
+	int platformX;
+	int platformY;
+	
+	int canX;
+	int canY;
+	
+	int robotX;
+	int robotY;
+	
+	public int[][] setPath() {
+		
+		int left;
+		int right;
+		int up;
+		int down;
+		int center;
+		
+		
+		
+		for(int i = 0; i < Map2D.ROWS; i++) {
+			for(int j = 0; j < Map2D.COLS; j++) {
+				
+				if(map[i][j] == Map2D.PLATFORM) { //find final goal
+					platformX = i;
+					platformY = j;
+				}
+				
+				if(map[i][j] == Map2D.CAN) { // find can
+					canX = i;
+					canY = j;
+				}
+				if(map[i][j] == Map2D.ROBOT) { // find robot
+					robotX = i;
+					robotY = j;
+				}
+			}
+		}
+		for(int i = 0; i < Map2D.ROWS; i++) {
+			for(int j = 0; j < Map2D.COLS; j++) {
+				
+				left = map[i-1][j]; 
+				right = map[i+1][j];
+				up = map[i][j-1];
+				down = map[i][j+1];
+				center = map[i][j];
+				
+				if(center == Map2D.PLATFORM) {
+					map[i-1][j] = setSquare(left, 5); 
+					map[i+1][j] = setSquare(right, 5);
+					map[i][j-1] = setSquare(up, 5);
+					map[i][j+1] = setSquare(down, 5);
+				}
+				else if(center == Map2D.CAN) {
+					map[i-1][j] = setSquare(left, 5); 
+					map[i+1][j] = setSquare(right, 5);
+					map[i][j-1] = setSquare(up, 5);
+					map[i][j+1] = setSquare(down, 5);
+				}
+				else if(center == Map2D.ROBOT){
+					
+				}
+				
+				
+			}
+		}
+		return map;
+	}
+	
+	private int setSquare(int val, int replace) {
+		switch(val) {
+		case 0:
+			return replace;
+		case 1:
+			return val;
+		case 2:
+			return val;
+		case 3:
+			return val;
+		case 4:
+			return val;
+		default:
+			return val;
+		}		
+	}
+	
+	public void print(int[][] array) {
+		for(int i = 0; i < Map2D.ROWS; i++) {
+			for(int j = 0; j < Map2D.COLS; j++) {
+				System.out.print(array[i][j]);
+				System.out.print(" ");
+			}
+			System.out.println("");
+		}
+	}
+	
+	public static void main(String[] args) {
+
+	}
+	
+}

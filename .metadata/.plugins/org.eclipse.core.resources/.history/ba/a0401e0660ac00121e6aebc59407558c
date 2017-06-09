@@ -1,0 +1,112 @@
+package slick.path2glory.tutorial1;
+
+import org.newdawn.slick.Animation;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Shape;
+import org.newdawn.slick.geom.Vector2f;
+
+public class Player extends CollidableAnimationObject {
+
+	protected int damagePercent;
+
+	protected Animation playerAnim;
+	protected Shape hitShape;
+
+	protected Vector2f playerVel;
+	
+	protected boolean jumping = false;
+	protected int jumpNum = 2;
+	
+	protected long jumpTime;
+	protected long fallTime;
+	
+	protected float deltaX = 0;
+	protected float deltaY = 0;
+	
+	//TODO
+	//There will be player specific classes that extend Player
+	//So params like numImages and animSpeed will be player specific
+	public Player(String name, String animFolder, Vector2f pos, Shape hitShape,
+			int hitType, int numImages, int animSpeed) throws SlickException {
+		super(name, new Animation(), pos, hitShape, hitType);
+		Animation anim = loadAnimations(animFolder, numImages, animSpeed);
+		this.animation = anim;
+
+		playerVel = new Vector2f(0, 0);
+		damagePercent = 0;
+	}
+
+	protected Animation loadAnimations(String folderName, int numImages, int animSpeed) throws SlickException {
+		Image[] animation = new Image[numImages];
+		for(int i = 0; i < numImages; i++) {
+			animation[i] = new Image("data/"+folderName+"/"+folderName+""+(i+1)+".png");
+		}
+		return new Animation(animation, 30);
+	}
+	
+	public Vector2f updatePlayer(String commands, long elapsedTime, int delta) throws SlickException {
+
+		deltaX = 0;
+		deltaY = 0;
+
+		if(commands.indexOf("LEFT") != -1 && (commands.indexOf("RIGHT") != -1)) {
+			playerVel.x = 0.0f;
+		} else if (commands.indexOf("LEFT") != -1) {
+
+			if (jumpNum < 2) {
+				playerVel.x = -0.2f;
+			} else {
+				playerVel.x = -0.3f;
+			}
+			deltaY -= 0.01f * delta;
+		} else if ((commands.indexOf("RIGHT") != -1)) {
+
+			if (jumpNum < 2) {
+				playerVel.x = 0.2f;
+			} else {
+				playerVel.x = 0.3f;
+				// deltaX += 0.4f * delta;
+			}
+			deltaY -= 0.01f * delta;
+		}
+
+		if ((commands.indexOf("UP") != -1) && (jumpNum == 2)) {
+
+			playerVel.y = -0.3f;
+			jumpNum--;
+			jumpTime = elapsedTime;
+			System.out.println("First jump");
+
+		} else if ((commands.indexOf("UP") != -1) && (jumpNum == 1)
+				&& ((elapsedTime - jumpTime) > 500)) {
+			playerVel.y = -0.3f;
+			jumpNum--;
+			System.out.println("Second jump");
+		}
+
+		if ((commands.indexOf("DOWN") != -1) && (jumpNum < 2)) {
+			playerVel.y = +0.3f;
+		}
+
+		playerVel.y += 0.0004f * delta;
+		if (playerVel.x < 0) {
+			playerVel.x += 0.0004f * delta;
+		} else if (playerVel.x > 0) {
+			playerVel.x -= 0.0004f * delta;
+		}
+		
+		deltaX += playerVel.x * delta;
+		deltaY += playerVel.y * delta;
+
+		return new Vector2f(deltaX, deltaY);
+
+	}
+	
+	public void hit(int damage) {
+		
+	}
+
+}

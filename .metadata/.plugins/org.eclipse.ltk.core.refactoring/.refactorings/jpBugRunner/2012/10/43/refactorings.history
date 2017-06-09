@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BugRunner.java&apos; to &apos;ThinkingInJava/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;jpBugRunner&apos;&#x0D;&#x0A;- Destination element: &apos;ThinkingInJava/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;BugRunner.java&apos;" description="Copy compilation unit" destination="=ThinkingInJava/src&lt;" element1="/src&lt;{BugRunner.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1351035644615" units="1" version="1.0"/>
+</session>

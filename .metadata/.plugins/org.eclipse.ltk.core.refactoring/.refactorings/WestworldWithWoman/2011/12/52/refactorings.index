@@ -1,0 +1,11 @@
+1324682501442	Rename type 'EntityNames'
+1324684429564	Move compilation unit
+1324684441337	Move compilation unit
+1324685208895	Rename package 'ai'
+1324685219160	Move compilation units
+1324686555640	Delete element
+1324686611226	Rename package 'states'
+1324693562299	Rename field 'm_pCurrentState'
+1324696197097	Rename method 'Enter'
+1324696219451	Rename method 'Execute'
+1324696242469	Rename method 'Exit'

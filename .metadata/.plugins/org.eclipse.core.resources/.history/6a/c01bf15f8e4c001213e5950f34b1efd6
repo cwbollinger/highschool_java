@@ -1,0 +1,9 @@
+
+public class TestPi {
+
+	public static void main(String[] args) {
+		CalculatePi test = new CalculatePi();
+		test.getValue();
+		//System.out.println(test.getValue());
+	}
+}

@@ -1,0 +1,6 @@
+
+public class Adventurer {
+	int adv_x;
+	int adv_y;
+	
+}

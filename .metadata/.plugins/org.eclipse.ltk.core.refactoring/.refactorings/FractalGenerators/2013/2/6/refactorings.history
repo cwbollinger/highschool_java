@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;curve&apos; in &apos;DragonCurve.main(...)&apos; to &apos;curve1&apos;&#x0D;&#x0A;- Original project: &apos;DragonCurveGenerator&apos;&#x0D;&#x0A;- Original element: &apos;DragonCurve.main(String[]).curve&apos;&#x0D;&#x0A;- Renamed element: &apos;curve&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;curve&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{DragonCurve.java[DragonCurve~main~\[QString;@curve!2672!2723!2684!2688!QDragonCurve;!0!false" name="curve1" references="true" stamp="1360430716134" version="1.0"/>
+</session>

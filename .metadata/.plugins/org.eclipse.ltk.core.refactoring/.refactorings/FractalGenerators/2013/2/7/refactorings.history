@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;TestFractal.java&apos; to &apos;FractalGenerators/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;FractalGenerators&apos;&#x0D;&#x0A;- Destination element: &apos;FractalGenerators/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;TestFractal.java&apos;" description="Copy compilation unit" destination="/src&lt;" element1="/src&lt;{TestFractal.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1360766766084" units="1" version="1.0"/>
+</session>

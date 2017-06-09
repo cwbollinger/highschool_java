@@ -1,0 +1,200 @@
+import com.ibm.rally.Car;
+import com.ibm.rally.ICar;
+import com.ibm.rally.IObject;
+/**
+ * This is the class that you must implement to enable your car within
+ * the CodeRally track. Adding code to these methods will give your car
+ * it's personality and allow it to compete.
+ */
+public class RallyCar extends Car {
+	protected static final int ATSTATION = -1;
+	protected static final double kP = 0.5;
+	protected int state;
+	protected int h;
+	protected int n;
+	protected int x;
+	protected double enemy_dist;
+	protected int enemy_heading;
+	protected int station_num;
+	protected int heading_diff;
+	protected int throttle_speed;
+
+	/**
+	 * @see com.ibm.rally.Car#getColor()
+	 */
+	public byte getColor() {
+		return CAR_YELLOW;
+	}
+
+	/**
+	 * @see com.ibm.rally.Car#initialize()
+	 */
+	public void initialize() {
+		state = 1;
+		n = 0;
+		
+	}
+	
+	public int FindGas() {
+		double x = getDistanceTo(getFuelDepots()[0]);
+		double y = getDistanceTo(getFuelDepots()[1]); 
+		double z = getDistanceTo(getFuelDepots()[2]);
+		if((x < 30) || (y < 30) || (z < 30)) {
+			return ATSTATION;
+		}
+		if(x < y) {
+			if(x < z) {
+				return 0;
+			} else {
+				return 2;
+			}
+		} else {
+			return 1;
+		}
+	}
+	
+	public int FindTire() {
+		double x = getDistanceTo(getSpareTireDepot()[0]);
+		double y = getDistanceTo(getSpareTireDepot()[1]); 
+		double z = getDistanceTo(getSpareTireDepot()[2]);
+		if((x < 30) || (y < 30) || (z < 30)) {
+			return ATSTATION;
+		}
+		if(x < y) {
+			if(x < z) {
+				return 0;
+			} else {
+				return 2;
+			}
+		} else {
+			return 1;
+		}
+	}
+
+	/**
+	 * @see com.ibm.rally.Car#move(int, boolean, ICar, ICar)
+	 * Put the car in reverse for a few moves if you collide with another car.
+	 * Go toward the first gas depot.
+	 */
+	
+	public void move(int lastMoveTime, boolean hitWall, ICar collidedWithCar, ICar hitBySpareTire) {
+
+		if(state == 1) {
+
+			setThrottle(100);
+			if(getPreviousCheckpoint() == (getCheckpoints().length-1)) {
+				h = getHeadingTo(getCheckpoints()[0]);
+			} else {
+				h = getHeadingTo(getCheckpoints()[getPreviousCheckpoint()+1]);
+			}
+			heading_diff = getHeading() - h;
+			if(heading_diff > 180) {
+				heading_diff = -(360 - heading_diff);
+			}
+			if(heading_diff < -180) {
+				heading_diff = 360 + heading_diff;
+			}
+			x = (int) (heading_diff*kP);
+			if(x > 10) {
+				x = 10;
+			} else if(x < -10) {
+				x = -10;
+			}
+			setSteeringSetting(-x);
+			
+			if((getFuel() < 10) && (getClockTicks() < 500)) {
+				state = 2;
+			}
+			if(!isInProtectMode()) {
+				n = getOpponents().length;
+				for(; n > 0; n--) {
+					enemy_dist = getDistanceTo(getOpponents()[n-1]);
+					if(enemy_dist < 60) {
+						state = 4;
+						break;
+					}
+				}
+			}
+			if(isReadyToThrowSpareTire()) {
+				n = getOpponents().length;
+				for(; n > 0; n--) {
+					enemy_heading = getHeadingTo(getOpponents()[n-1]);
+					if(getHeading() == enemy_heading) {
+						state = 5;
+						break;
+					}
+				}
+			}
+			if((getNumberOfSpareTires() == 0) && (getClockTicks() < 400)) {
+				state = 6;
+			}
+		}
+		if(state == 2) {
+			station_num = FindGas();
+			h = getHeadingTo(getFuelDepots()[station_num]);
+			throttle_speed = (int) getDistanceTo(getFuelDepots()[station_num]);
+			setThrottle(throttle_speed);
+			station_num = FindGas();
+			h = getHeadingTo(getFuelDepots()[station_num]);
+			
+			if(h == ATSTATION) {
+				state = 3;
+			} else {
+				heading_diff = getHeading() - h;
+				if(heading_diff > 180) {
+					heading_diff = 360 - heading_diff;
+				}
+				if(heading_diff < -180) {
+					heading_diff = -360 - heading_diff;
+				}
+				x = (int) (heading_diff*kP);
+				if(x > 10) {
+					x = 10;
+				} else if(x < -10) {
+					x = -10;
+				}
+				setSteeringSetting(-x);
+			}
+		}
+		if(state == 3) {
+			setThrottle(0);
+			if(getFuel() > 60) {
+				state = 1;
+			}
+		}
+		if(state == 4) {
+			if(enterProtectMode()) {
+				state = 1;
+			}
+		}
+		if(state == 5) {
+			if(throwSpareTire()) {
+				state = 1;
+			}
+		}
+		if(state == 6) {
+			setThrottle(30);
+			station_num = FindTire();
+			h = getHeadingTo(getFuelDepots()[station_num]);
+			
+			if(h == ATSTATION) {
+				state = 7;
+			} else {
+				x = (int) ((getHeading() - h)*kP);
+				if(x > 10) {
+					x = 10;
+				} else if(x < -10) {
+					x = -10;
+				}
+				setSteeringSetting(-x);
+			}
+		}
+		if(state == 7) {
+			setThrottle(0);
+			if(getNumberOfSpareTires() > 3) {
+				state = 1;
+			}
+		}
+
+	}
+}

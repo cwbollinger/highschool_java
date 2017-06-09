@@ -1,0 +1,17 @@
+
+public class TestPi {
+
+	public static void main(String[] args) {
+		CalculatePi test = new CalculatePi();
+		System.out.println(test.relPrime(2, 3));
+		System.out.println(test.relPrime(4, 8));
+		System.out.println(test.relPrime(3, 12));
+		System.out.println(test.relPrime(2, 5));
+		System.out.println(test.relPrime(7, 3));
+		System.out.println(test.relPrime(6, 3));
+		System.out.println(test.relPrime(25, 11));
+
+
+		//System.out.println(test.getValue());
+	}
+}

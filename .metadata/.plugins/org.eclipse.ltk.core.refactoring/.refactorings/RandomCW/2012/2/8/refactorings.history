@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;RandomCW.java&apos; to &apos;JavaCode/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;RandomCW&apos;&#x0D;&#x0A;- Destination element: &apos;JavaCode/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;RandomCW.java&apos;" description="Copy compilation unit" destination="=JavaCode/src&lt;" element1="/src&lt;{RandomCW.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1329887874063" units="1" version="1.0"/>
+</session>

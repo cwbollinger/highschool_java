@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;buttonSize&apos; in &apos;GUICore.GUICore()&apos; to &apos;btnSize&apos;&#x0D;&#x0A;- Original project: &apos;LCARS gui test&apos;&#x0D;&#x0A;- Original element: &apos;GUICore.GUICore().buttonSize&apos;&#x0D;&#x0A;- Renamed element: &apos;buttonSize&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;buttonSize&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{GUICore.java[GUICore~GUICore@buttonSize!166!212!176!185!QDimension;!0!false" name="btnSize" references="true" stamp="1345047989052" version="1.0"/>
+</session>

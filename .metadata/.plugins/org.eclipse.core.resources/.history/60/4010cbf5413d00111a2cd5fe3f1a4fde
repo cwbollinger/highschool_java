@@ -1,0 +1,83 @@
+import lejos.nxt.*;
+import lejos.nxt.comm.RConsole;
+
+public class Robot {
+
+	String  msg;
+
+	NXTMotor motA;
+	NXTMotor motB;
+	
+	int right_pow;
+	int left_pow;
+
+	TouchSensor touch;
+	boolean touchVal;
+	
+	LightSensor light;
+	int lightVal;
+	
+	State current_state;
+
+	public Robot() {
+		
+		motA = new NXTMotor(MotorPort.A);
+		motB = new NXTMotor(MotorPort.B);
+		
+		right_pow = 50;
+		left_pow = 50;
+
+		motA.setPower(right_pow);
+		motB.setPower(left_pow);
+
+		touch = new TouchSensor(SensorPort.S1);
+		light = new LightSensor(SensorPort.S2);
+		
+		current_state = StateStart.getInstance();
+
+		RConsole.openUSB(20000);
+		RConsole.println("Connected!");
+	}
+
+	public void update() {
+		lightVal = light.getLightValue();
+		touchVal = touch.isPressed();
+		if (current_state != null) {
+			current_state.execute(this);
+		}
+	}
+
+	// this method changes the current state to the new state. It first
+	// calls the Exit() method of the current state, then assigns the
+	// new state to m_pCurrentState and finally calls the Entry()
+	// method of the new state.
+	public void changeState(State new_state) {
+		// make sure both states are both valid before attempting to
+		// call their methods
+		if (current_state == null || new_state == null) {
+			System.err.println("STATE DOES NOT EXIST");
+		}
+
+		// call the exit method of the existing state
+		current_state.exit(this);
+
+		// change state to the new state
+		current_state = new_state;
+
+		// call the entry method of the new state
+		current_state.enter(this);
+	}
+	
+	public void sleep(int millisec) {
+		try {
+			Thread.sleep(millisec);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	//turn the robot right right when driving FORWARD
+	public void turnRight(NXTMotor motA, NXTMotor motB, int pow_diff) {
+		motA.setPower(pow_diff);
+	}
+}

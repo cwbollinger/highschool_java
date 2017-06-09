@@ -1,0 +1,14 @@
+package slick.path2glory.tutorial1;
+
+/***
+ * 
+ * @author Chris
+ * 
+ * This class is for a test object that inflicts damage on the player.
+ *
+ */
+
+
+public class PainBox extends CollidableImageObject {
+
+}

@@ -1,0 +1,144 @@
+package slick.path2glory.tutorial1;
+
+import org.newdawn.slick.Animation;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Shape;
+import org.newdawn.slick.geom.Vector2f;
+
+public class Player extends CollidableAnimationObject {
+
+	protected int damagePercent;
+
+	protected Animation playerAnim;
+	protected Shape hitShape;
+
+	protected Vector2f playerVel;
+	
+	protected boolean jumping = false;
+	protected int jumpNum = 2;
+	
+	protected long jumpTime;
+	protected long fallTime;
+	
+	protected float deltaX = 0;
+	protected float deltaY = 0;
+	
+	//TODO
+	//There will be player specific classes that extend Player
+	//So params like numImages and animSpeed will be player specific
+	public Player(String name, String animFolder, Vector2f pos, Shape hitShape,
+			int hitType, int numImages, int animSpeed) throws SlickException {
+		super(name, new Animation(), pos, hitShape, hitType);
+		Animation anim = loadAnimations(animFolder, numImages, animSpeed);
+		this.animation = anim;
+
+		playerVel = new Vector2f(0, 0);
+		damagePercent = 0;
+	}
+
+	protected Animation loadAnimations(String folderName, int numImages, int animSpeed) throws SlickException {
+		Image[] animation = new Image[numImages];
+		for(int i = 0; i < numImages; i++) {
+			animation[i] = new Image("data/"+folderName+"/"+folderName+""+(i+1)+".png");
+		}
+		return new Animation(animation, 30);
+	}
+	
+	public Vector2f update(String commands, long elapsedTime, int delta) throws SlickException {
+
+		// System.out.println(elapsedTime);
+
+		deltaX = 0;
+		deltaY = 0;
+
+		Input input = gc.getInput();
+
+		if(input.isKeyDown(Input.KEY_A) && input.isKeyDown(Input.KEY_D)) {
+			playerVel.x = 0.0f;
+		} else if (input.isKeyDown(Input.KEY_A)) {
+
+			if (jumpNum < 2) {
+				playerVel.x = -0.2f;
+			} else {
+				playerVel.x = -0.3f;
+			}
+			deltaY -= 0.01f * delta;
+		} else if (input.isKeyDown(Input.KEY_D)) {
+
+			if (jumpNum < 2) {
+				playerVel.x = 0.2f;
+			} else {
+				playerVel.x = 0.3f;
+				// deltaX += 0.4f * delta;
+			}
+			deltaY -= 0.01f * delta;
+		}
+
+		if (input.isKeyDown(Input.KEY_W) && (jumpNum == 2)) {
+
+			playerVel.y = -0.3f;
+			jumpNum--;
+			jumpTime = elapsedTime;
+			System.out.println("First jump");
+
+		} else if (input.isKeyDown(Input.KEY_W) && (jumpNum == 1)
+				&& ((elapsedTime - jumpTime) > 500)) {
+			playerVel.y = -0.3f;
+			jumpNum--;
+			System.out.println("Second jump");
+		}
+
+		if (input.isKeyDown(Input.KEY_S) && (jumpNum < 2)) {
+			playerVel.y = +0.3f;
+		}
+
+		if (input.isKeyDown(Input.KEY_ESCAPE)) {
+			gc.exit();
+		}
+
+		if (isCollidingWith(ouch)) {
+			damagePercent += 1;
+			System.out.println(damagePercent);
+			playerVel.x *= -3;
+			playerVel.y *= -3;
+		}
+
+		deltaX += playerVel.x * delta;
+		playerVel.y += 0.0004f * delta;
+		if (playerVel.x < 0) {
+			playerVel.x += 0.0004f * delta;
+		} else if (playerVel.x > 0) {
+			playerVel.x -= 0.0004f * delta;
+		}
+		
+		deltaY += playerVel.y * delta;
+
+		//TODO: Check deltaX and deltaY for collisions separately.
+		
+		setPosition(new Vector2f(getPosition().x + deltaX,
+				getPosition().y + deltaY));
+
+		if (checkCollisions()) {
+			playerVel.y = 0;
+			setPosition(new Vector2f(getPosition().x - deltaX,
+					getPosition().y - deltaY));
+			jumpNum = 2;
+			fallTime = 0;
+		} else {
+			
+			if(fallTime == 0) {
+				fallTime = elapsedTime;
+			} else if ((jumpNum == 2) && ((elapsedTime-fallTime) > 110)) {
+				jumpNum--;
+				System.out.println("Fell off platform");
+			}
+			
+			
+		}
+
+	}
+
+}

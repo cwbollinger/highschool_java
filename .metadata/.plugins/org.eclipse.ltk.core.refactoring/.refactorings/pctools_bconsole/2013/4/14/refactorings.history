@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;JoystickPoller.java&apos; to &apos;pctools_bconsole/src/lejos.pc.bconsole&apos;&#x0D;&#x0A;- Original project: &apos;pctools_bconsole&apos;&#x0D;&#x0A;- Destination element: &apos;pctools_bconsole/src/lejos.pc.bconsole&apos;&#x0D;&#x0A;- Original element: &apos;lejos.pc.bconsole.JoystickPoller.java&apos;" description="Copy compilation unit" destination="/src&lt;lejos.pc.bconsole" element1="/src&lt;lejos.pc.bconsole{JoystickPoller.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1365008852481" units="1" version="1.0"/>
+</session>

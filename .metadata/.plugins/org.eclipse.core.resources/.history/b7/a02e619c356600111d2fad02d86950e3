@@ -1,0 +1,83 @@
+
+public class WaveFront {
+	
+	Map2D map;
+	
+	
+	public WaveFront(Map2D scanMap) {
+		map = scanMap;
+	}
+	
+	int goalX;
+	int goalY;
+	
+	int robotX;
+	int robotY;
+	
+	public int[][] setPath() {
+		
+		
+		int up;
+		int upRight;
+		int right;
+		int downRight;
+		int down;
+		int downLeft;
+		int left;
+		int upLeft;
+		int center;
+		
+		
+		
+		for(int i = 0; i < Map2D.COLS; i++) {
+			for(int j = 0; j < Map2D.ROWS; j++) {
+				
+				if(map.grid[i][j] == 0) { //find final goal
+					goalX = i;
+					goalY = j;
+				}
+				if(map.grid[i][j] == 8) { //find robot pos
+					robotX = i;
+					robotY = j;
+				}
+			}
+		}
+		for(int i = 1; i < Map2D.COLS-1; i++) {
+			for(int j = 1; j < Map2D.ROWS-1; j++) {
+
+				up = map.grid[robotX][robotY + 1];
+				upRight = map.grid[robotX + 1][robotY + 1];
+				right = map.grid[robotX + 1][robotY];
+				downRight = map.grid[robotX + 1][robotY - 1];
+				down = map.grid[robotX][robotY - 1];
+				downLeft = map.grid[robotX - 1][robotY - 1];
+				left = map.grid[robotX - 1][robotY];
+				upLeft = map.grid[robotX - 1][robotY + 1];
+					
+			}
+		}
+		return map.grid;
+	}
+	
+	private int setSquare(int val, int replace) {
+		switch(val) {
+		case 0:
+			return replace;
+		case 1:
+			return val;
+		case 2:
+			return val;
+		case 3:
+			return val;
+		case 4:
+			return val;
+		default:
+			return val;
+		}		
+	}
+	
+	public static void main(String[] args) {
+
+	}
+	
+}

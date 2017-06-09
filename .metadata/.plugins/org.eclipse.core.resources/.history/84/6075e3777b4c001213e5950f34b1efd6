@@ -1,0 +1,27 @@
+
+public class CalculatePi {
+
+	public double getValue() {
+		int n1, n2;
+		
+		int i;
+		for(i = 0; i < 100; i++) {
+			n1 = (int) Math.round(Math.random()*100.0);
+		}
+		return 0;
+	}
+	
+	private boolean relPrime(int n1, int n2) {
+		double q1 = (double) n1/n2;
+		double q2 = (double) n2/n1;
+		if((q1 == Math.round(q1)) || (q2 == Math.round(q2))) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+//	public static void main(String[] args) {
+//		System.out.println(relPrime(5,5));
+//	}
+}

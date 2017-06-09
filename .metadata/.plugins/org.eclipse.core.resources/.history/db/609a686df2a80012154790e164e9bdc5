@@ -1,0 +1,38 @@
+package slick.path2glory.tutorial1;
+
+import org.newdawn.slick.Animation;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.Shape;
+import org.newdawn.slick.geom.Vector2f;
+
+public class Player extends CollidableAnimationObject {
+
+	protected int damagePercent;
+
+	protected Animation playerAnim;
+	protected Shape hitShape;
+
+	protected Vector2f playerVel;
+	protected Vector2f playerPos;
+
+	public Player(String name, String animFolder, Vector2f pos, Shape hitShape,
+			int hitType) throws SlickException {
+		super(name, new Animation(), pos, hitShape, hitType);
+		Animation anim = loadAnimations(animFolder);
+		this.animation = anim;
+
+		playerPos = pos;
+		playerVel = new Vector2f(0, 0);
+		damagePercent = 0;
+	}
+
+	protected Animation loadAnimations(String folderName) throws SlickException {
+		Image[] animation = new Image[12];
+		for(int i = 0; i < 12; i++) {
+			animation[i] = new Image(folderName+"/"+folderName+""+(i+1)+".png");
+		}
+		return new Animation(animation, 20);
+	}
+
+}

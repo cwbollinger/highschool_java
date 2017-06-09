@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<playlist>
+  <player id="class:/com.ibm.coderally.sample.CheckpointDriver09"/>
+  <player id="class:/com.ibm.coderally.sample.CheckpointDriver09"/>
+  <player id="class:/com.ibm.coderally.sample.CheckpointDriver09"/>
+  <player id="file:/C:\cygwin\home\chris\workspace\Game"/>
+</playlist>

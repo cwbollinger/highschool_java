@@ -1,0 +1,16 @@
+
+public class CalculatePi {
+
+	public double getValue() {
+		return 0;
+	}
+	
+	private boolean relPrime(int n1, int n2) {
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		double blargle = 2.000000000;
+		System.out.println(Math.round(blargle)==blargle);
+	}
+}

@@ -1,0 +1,169 @@
+package slick.path2glory.tutorial1;
+
+import java.awt.Toolkit;
+import java.util.ArrayList;
+
+import org.newdawn.slick.AppGameContainer;
+import org.newdawn.slick.BasicGame;
+import org.newdawn.slick.GameContainer;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.Image;
+import org.newdawn.slick.Input;
+import org.newdawn.slick.SlickException;
+import org.newdawn.slick.geom.*;
+
+public class SlickBasicGame extends BasicGame {
+
+	ArrayList<CollidableImageObject> platforms = null;
+	final int numPlatforms = 3;
+
+	CollidableImageObject awesomeFace = null;
+
+	CollidableImageObject platform = null;
+
+	Image awesomeFaceImg = null;
+	Image platformImg = null;
+
+	float planeX = 400;
+	float planeY = 300;
+
+	float deltaX = 0;
+	float deltaY = 0;
+
+	float platformX = 200;
+	float platformY = 300;
+
+	float scale = 1;
+
+	boolean jumping = false;
+
+	long time;
+	long elapsedTime;
+
+	Vector2f planeVel;
+
+	public SlickBasicGame() {
+		super("Slick2D Path2Glory - SlickBasicGame");
+	}
+
+	@Override
+	public void init(GameContainer gc) throws SlickException {
+
+		planeVel = new Vector2f(0, 0);
+
+		time = gc.getTime();
+		elapsedTime = gc.getTime();
+
+		platformImg = new Image("data/test_tile_mid.png");
+		awesomeFaceImg = new Image("data/plane.png");
+
+		Vector2f planePos = new Vector2f(planeX, planeY);
+		Rectangle planeHitbox = new Rectangle(0, 0, awesomeFaceImg.getWidth(),
+				awesomeFaceImg.getHeight());
+
+		awesomeFace = new CollidableImageObject("Awesome Face", awesomeFaceImg, planePos,
+				planeHitbox, 1);
+
+		Vector2f platformPos;
+		Rectangle platformHitbox = new Rectangle(0, 0, platformImg.getWidth(),
+				platformImg.getHeight());
+
+		platforms = new ArrayList<CollidableImageObject>();
+		for (int i = 0; i < numPlatforms; i++) {
+			platformPos = new Vector2f(platformX + i * 200, platformY + i * 200);
+			platform = new CollidableImageObject("Floor" + i, platformImg,
+					platformPos, platformHitbox, 1);
+			platforms.add(platform);
+			
+		}
+	}
+
+	@Override
+	public void update(GameContainer gc, int delta) throws SlickException {
+		elapsedTime = gc.getTime();
+		elapsedTime -= time;
+		// System.out.println(elapsedTime);
+
+		deltaX = 0;
+		deltaY = 0;
+
+		planeX = awesomeFace.position.x;
+		planeY = awesomeFace.position.y;
+
+		Input input = gc.getInput();
+
+		if (input.isKeyDown(Input.KEY_A)) {
+			// plane.image.rotate(-0.2f * delta);
+			deltaX -= 0.4f * delta;
+			deltaY -= 0.001f * delta;
+		}
+
+		if (input.isKeyDown(Input.KEY_D)) {
+			// plane.image.rotate(0.2f * delta);
+			deltaX += 0.4f * delta;
+			deltaY -= 0.001f * delta;
+		}
+
+		if (input.isKeyDown(Input.KEY_W) && !jumping) {
+
+			planeVel.y = -0.4f;
+			jumping = true;
+
+		}
+
+		if (input.isKeyDown(Input.KEY_ESCAPE)) {
+			gc.exit();
+		}
+
+		planeVel.y += 0.0004f * delta;
+		deltaY += planeVel.y * delta;
+
+		awesomeFace.setPosition(new Vector2f(planeX + deltaX, planeY + deltaY));
+
+		
+		if (checkCollisions()) {
+			planeVel.y = 0;
+			awesomeFace.setPosition(new Vector2f(planeX, planeY));
+			jumping = false;
+		} else {
+			awesomeFace.setPosition(new Vector2f(planeX + deltaX, planeY + deltaY));
+			System.out.println("Not Collide");
+		}
+
+	}
+
+	private boolean checkCollisions() { // returns true if a collision has
+										// occurred
+		for (int i = 0; i < platforms.size(); i++) {
+			if (awesomeFace.isCollidingWith(platforms.get(i))) {
+				System.out.println("Collide");
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	private void drawPlatforms(Graphics g) {
+		for(int i = 0; i < platforms.size(); i++) {
+			platforms.get(i).render(g);
+		}
+	}
+
+	public void render(GameContainer gc, Graphics g) throws SlickException {
+
+		//platform.render(g);
+		drawPlatforms(g);
+		awesomeFace.render(g);
+
+	}
+
+	public static void main(String[] args) throws SlickException {
+		AppGameContainer app = new AppGameContainer(new SlickBasicGame());
+
+		int height = Toolkit.getDefaultToolkit().getScreenSize().height;
+		int width = Toolkit.getDefaultToolkit().getScreenSize().width;
+
+		app.setDisplayMode(width, height, true);
+		app.start();
+	}
+}

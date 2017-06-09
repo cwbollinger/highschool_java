@@ -1,0 +1,17 @@
+
+public class CalculatePi {
+
+	public double getValue() {
+		return 0;
+	}
+	
+	private boolean relPrime(int n1, int n2) {
+		double q1 = n1/n2;
+		double q2 = n2/n1;
+		if(q1 == Math.round(q1)||q2 == Math.round(q2)) {
+			return false;
+		}
+		return true;
+	}
+
+}

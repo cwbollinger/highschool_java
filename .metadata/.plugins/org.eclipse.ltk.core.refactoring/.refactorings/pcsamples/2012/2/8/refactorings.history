@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BTSend.java&apos; to &apos;org.lejos.pcexample/src/org.lejos.pcexample&apos;&#x0D;&#x0A;- Original project: &apos;pcsamples&apos;&#x0D;&#x0A;- Destination element: &apos;org.lejos.pcexample/src/org.lejos.pcexample&apos;&#x0D;&#x0A;- Original element: &apos;org.lejos.pcsample.btsend.BTSend.java&apos;" description="Copy compilation unit" destination="=org.lejos.pcexample/src&lt;org.lejos.pcexample" element1="/src&lt;org.lejos.pcsample.btsend{BTSend.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1329892078989" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,1570 @@
+2011.09.08 21:24.55 I Game location: file:/C:/Program Files/eclipse-java-helios-SR2-win32/plugins/com.ibm.games.coderally_3.1.0.jar
+2011.09.08 21:24.55 I Loading CodeRally from /C:/Program Files/eclipse-java-helios-SR2-win32/plugins/com.ibm.games.coderally_3.1.0.jar
+2011.09.08 21:24.55 I createMainWindow
+2011.09.08 21:24.55 I Loading CodeRally from /C:/Program Files/eclipse-java-helios-SR2-win32/plugins/com.ibm.games.coderally_3.1.0.jar
+2011.09.08 21:24.56 I showSplash
+2011.09.08 21:24.56 I Reading playlist
+2011.09.08 21:24.56 I Loading playlist: C:\cygwin\home\chris\workspace\.metadata\.plugins\com.ibm.games\Game.xml
+2011.09.08 21:24.56 I Loading playlist
+2011.09.08 21:24.56 I Checking for player at: com.ibm.coderally.sample.CheckpointDriver09
+2011.09.08 21:24.56 I Loading project preferences
+2011.09.08 21:24.56 I Loading settings
+2011.09.08 21:24.56 I Checking for player at: com.ibm.coderally.sample.CheckpointDriver09
+2011.09.08 21:24.56 I Loading project preferences
+2011.09.08 21:24.56 I Checking for player at: com.ibm.coderally.sample.CheckpointDriver09
+2011.09.08 21:24.56 I Loading project preferences
+2011.09.08 21:24.56 I Checking for player at: C:\cygwin\home\chris\workspace\Game
+2011.09.08 21:24.56 I Loading project preferences: C:\cygwin\home\chris\workspace\Game
+2011.09.08 21:24.56 I Loading project preferences
+2011.09.08 21:24.56 I Attempting to load class: RallyCar
+2011.09.08 21:24.56 I Class not found in parent
+2011.09.08 21:24.56 I Loading RallyCar from C:\cygwin\home\chris\workspace\Game\
+2011.09.08 21:24.56 I Error defining class
+java.io.FileNotFoundException: C:\cygwin\home\chris\workspace\Game\RallyCar.class (The system cannot find the file specified)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at com.ibm.jgfw.util.SecureClassLoader.loadClassImpl(SecureClassLoader.java:32)
+	at com.ibm.jgfw.util.SecureClassLoader.loadClass(SecureClassLoader.java:129)
+	at com.ibm.coderally.PlayerCarLogic.<init>(PlayerCarLogic.java:45)
+	at com.ibm.coderally.RallySkin.getPlayerByDir(RallySkin.java:36)
+	at com.ibm.jgfw.Launcher.loadPlayersFromPlaylist(Launcher.java:201)
+	at com.ibm.jgfw.Launcher.getPlayers(Launcher.java:217)
+	at com.ibm.jgfw.Launcher.playSyncTournament(Launcher.java:187)
+	at com.ibm.jgfw.Launcher.run(Launcher.java:169)
+	at com.ibm.jgfw.Launcher.main(Launcher.java:131)
+2011.09.08 21:24.56 I Loading from .classpath
+2011.09.08 21:24.56 I Loading RallyCar from C:\cygwin\home\chris\workspace\Game\bin\
+2011.09.08 21:24.56 I Attempting to load class: com.ibm.rally.Car
+2011.09.08 21:24.56 I Attempting to load class: com.ibm.rally.IObject
+2011.09.08 21:24.56 I Bracketing:
+2011.09.08 21:24.56 I   0 Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09]
+2011.09.08 21:24.56 I   0 Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09]
+2011.09.08 21:24.56 I   0 Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09]
+2011.09.08 21:24.56 I   0 Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game]
+2011.09.08 21:24.56 I Loading CodeRally from /C:/Program Files/eclipse-java-helios-SR2-win32/plugins/com.ibm.games.coderally_3.1.0.jar
+2011.09.08 21:24.56 I Delay: 150
+2011.09.08 21:24.56 I createPlayback
+2011.09.08 21:24.56 I createScoreboard
+2011.09.08 21:24.56 I Loading CodeRally from /C:/Program Files/eclipse-java-helios-SR2-win32/plugins/com.ibm.games.coderally_3.1.0.jar
+2011.09.08 21:24.56 I Starting server on port 1234
+2011.09.08 21:24.56 I Sending tournament state to: 0
+2011.09.08 21:24.56 I Playback of match Match 1 of 1
+2011.09.08 21:24.56 I Server ready on localhost/127.0.0.1:1234
+2011.09.08 21:24.56 I showPlayback
+2011.09.08 21:24.56 I Loading images
+2011.09.08 21:24.57 I Loading images
+2011.09.08 21:24.57 I Running match: Match 1 of 1
+2011.09.08 21:24.57 I Initial state: RallyState 0
+2011.09.08 21:24.57 I Status (1): Match 1 of 1
+2011.09.08 21:24.57 I Status (1): Round 1 of 1 (0)
+2011.09.08 21:24.57 I roundStatusChanged Round 1 of 1 (1) 1
+2011.09.08 21:24.57 I Painting RallyState 0
+2011.09.08 21:24.57 I Painting RallyState 0
+2011.09.08 21:24.57 I Painting RallyState 0
+2011.09.08 21:24.57 I Painting RallyState 0
+2011.09.08 21:24.57 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.58 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:24.59 I Painting RallyState 0
+2011.09.08 21:25.01 I Attempting to load class: java.lang.System
+2011.09.08 21:25.01 I Attempting to load class: java.io.PrintStream
+2011.09.08 21:25.01 I State: RallyState 1
+2011.09.08 21:25.01 I Painting RallyState 1
+2011.09.08 21:25.01 I State: RallyState 2
+2011.09.08 21:25.01 I Painting RallyState 2
+2011.09.08 21:25.02 I State: RallyState 3
+2011.09.08 21:25.02 I Painting RallyState 3
+2011.09.08 21:25.02 I State: RallyState 4
+2011.09.08 21:25.02 I Painting RallyState 4
+2011.09.08 21:25.02 I State: RallyState 5
+2011.09.08 21:25.02 I Painting RallyState 5
+2011.09.08 21:25.02 I State: RallyState 6
+2011.09.08 21:25.02 I Painting RallyState 6
+2011.09.08 21:25.02 I State: RallyState 7
+2011.09.08 21:25.02 I Painting RallyState 7
+2011.09.08 21:25.02 I State: RallyState 8
+2011.09.08 21:25.02 I Painting RallyState 8
+2011.09.08 21:25.02 I Giving 2 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 809.329482091689, 109.75295773965627, 97.75] for random checkpoint7
+2011.09.08 21:25.02 I State: RallyState 9
+2011.09.08 21:25.02 I Painting RallyState 9
+2011.09.08 21:25.02 I State: RallyState 10
+2011.09.08 21:25.02 I Painting RallyState 10
+2011.09.08 21:25.02 I State: RallyState 11
+2011.09.08 21:25.02 I Painting RallyState 11
+2011.09.08 21:25.02 I State: RallyState 12
+2011.09.08 21:25.02 I Painting RallyState 12
+2011.09.08 21:25.03 I State: RallyState 13
+2011.09.08 21:25.03 I Painting RallyState 13
+2011.09.08 21:25.03 I State: RallyState 14
+2011.09.08 21:25.03 I Painting RallyState 14
+2011.09.08 21:25.03 I State: RallyState 15
+2011.09.08 21:25.03 I Painting RallyState 15
+2011.09.08 21:25.03 I State: RallyState 16
+2011.09.08 21:25.03 I Painting RallyState 16
+2011.09.08 21:25.03 I State: RallyState 17
+2011.09.08 21:25.03 I Painting RallyState 17
+2011.09.08 21:25.03 I State: RallyState 18
+2011.09.08 21:25.03 I Painting RallyState 18
+2011.09.08 21:25.03 I State: RallyState 19
+2011.09.08 21:25.03 I Painting RallyState 19
+2011.09.08 21:25.03 I State: RallyState 20
+2011.09.08 21:25.03 I Painting RallyState 20
+2011.09.08 21:25.03 I Giving 2 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 570.961942948043, 225.54774916358667, 95.0] for random checkpoint13
+2011.09.08 21:25.03 I State: RallyState 21
+2011.09.08 21:25.03 I Painting RallyState 21
+2011.09.08 21:25.03 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 152.50987523282413, 127.63616676362881, 94.5] for next checkpoint0
+2011.09.08 21:25.04 I State: RallyState 22
+2011.09.08 21:25.04 I Painting RallyState 22
+2011.09.08 21:25.04 I State: RallyState 23
+2011.09.08 21:25.04 I Painting RallyState 23
+2011.09.08 21:25.04 I State: RallyState 24
+2011.09.08 21:25.04 I Painting RallyState 24
+2011.09.08 21:25.04 I State: RallyState 25
+2011.09.08 21:25.04 I Painting RallyState 25
+2011.09.08 21:25.04 I ----- Frames: 100
+2011.09.08 21:25.04 I ----- Time/frame:   21134972 ns
+2011.09.08 21:25.04 I ----- Frames/s:   47
+2011.09.08 21:25.04 I State: RallyState 26
+2011.09.08 21:25.04 I Painting RallyState 26
+2011.09.08 21:25.04 I State: RallyState 27
+2011.09.08 21:25.04 I Painting RallyState 27
+2011.09.08 21:25.04 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 435.1702681624276, 104.10579213609694, 93.0]
+2011.09.08 21:25.04 I State: RallyState 28
+2011.09.08 21:25.04 I Painting RallyState 28
+2011.09.08 21:25.04 I State: RallyState 29
+2011.09.08 21:25.04 I Painting RallyState 29
+2011.09.08 21:25.04 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 457.2586684852166, 153.24161576898578, 91.25] for next checkpoint14
+2011.09.08 21:25.04 I State: RallyState 30
+2011.09.08 21:25.04 I Painting RallyState 30
+2011.09.08 21:25.04 I State: RallyState 31
+2011.09.08 21:25.04 I Painting RallyState 31
+2011.09.08 21:25.05 I State: RallyState 32
+2011.09.08 21:25.05 I Painting RallyState 32
+2011.09.08 21:25.05 I State: RallyState 33
+2011.09.08 21:25.05 I Painting RallyState 33
+2011.09.08 21:25.05 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 148.49783738344058, 109.90455844129276, 91.5] for next checkpoint0
+2011.09.08 21:25.05 I State: RallyState 34
+2011.09.08 21:25.05 I Painting RallyState 34
+2011.09.08 21:25.05 I Giving 2 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 308.52305096451715, 76.32013678418846, 81.25] for random checkpoint15
+2011.09.08 21:25.05 I State: RallyState 35
+2011.09.08 21:25.05 I Painting RallyState 35
+2011.09.08 21:25.05 I State: RallyState 36
+2011.09.08 21:25.05 I Painting RallyState 36
+2011.09.08 21:25.05 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 64.04194253153031, 242.1821225405617, 90.75] for next checkpoint1
+2011.09.08 21:25.05 I State: RallyState 37
+2011.09.08 21:25.05 I Painting RallyState 37
+2011.09.08 21:25.05 I State: RallyState 38
+2011.09.08 21:25.05 I Painting RallyState 38
+2011.09.08 21:25.05 I State: RallyState 39
+2011.09.08 21:25.05 I Painting RallyState 39
+2011.09.08 21:25.05 I State: RallyState 40
+2011.09.08 21:25.05 I Painting RallyState 40
+2011.09.08 21:25.06 I State: RallyState 41
+2011.09.08 21:25.06 I Painting RallyState 41
+2011.09.08 21:25.06 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 304.0217148080264, 62.60786845148026, 85.25] for next checkpoint15
+2011.09.08 21:25.06 I State: RallyState 42
+2011.09.08 21:25.06 I Painting RallyState 42
+2011.09.08 21:25.06 I State: RallyState 43
+2011.09.08 21:25.06 I Painting RallyState 43
+2011.09.08 21:25.06 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 141.39870956248507, 92.31668826359846, 79.0] for next checkpoint0
+2011.09.08 21:25.06 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 59.46381710574915, 241.20460421281317, 89.0] for next checkpoint1
+2011.09.08 21:25.06 I State: RallyState 44
+2011.09.08 21:25.06 I Painting RallyState 44
+2011.09.08 21:25.06 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 97.38361821113315, 387.88716443616556, 88.75] for next checkpoint2
+2011.09.08 21:25.06 I State: RallyState 45
+2011.09.08 21:25.06 I Painting RallyState 45
+2011.09.08 21:25.06 I State: RallyState 46
+2011.09.08 21:25.06 I Painting RallyState 46
+2011.09.08 21:25.06 I State: RallyState 47
+2011.09.08 21:25.06 I Painting RallyState 47
+2011.09.08 21:25.06 I State: RallyState 48
+2011.09.08 21:25.06 I Painting RallyState 48
+2011.09.08 21:25.06 I State: RallyState 49
+2011.09.08 21:25.06 I Painting RallyState 49
+2011.09.08 21:25.06 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 155.55292532623938, 92.88718419983327, 81.25] for next checkpoint0
+2011.09.08 21:25.06 I State: RallyState 50
+2011.09.08 21:25.06 I Painting RallyState 50
+2011.09.08 21:25.07 I State: RallyState 51
+2011.09.08 21:25.07 I Painting RallyState 51
+2011.09.08 21:25.07 I State: RallyState 52
+2011.09.08 21:25.07 I Painting RallyState 52
+2011.09.08 21:25.07 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 106.25543763252786, 393.050397014189, 86.75] for next checkpoint2
+2011.09.08 21:25.07 I State: RallyState 53
+2011.09.08 21:25.07 I Painting RallyState 53
+2011.09.08 21:25.07 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 76.31155641326038, 247.3097781387696, 76.5] for next checkpoint1
+2011.09.08 21:25.07 I State: RallyState 54
+2011.09.08 21:25.07 I Painting RallyState 54
+2011.09.08 21:25.07 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 235.51445882676006, 462.23127738281624, 86.25] for next checkpoint3
+2011.09.08 21:25.07 I State: RallyState 55
+2011.09.08 21:25.07 I Painting RallyState 55
+2011.09.08 21:25.07 I State: RallyState 56
+2011.09.08 21:25.07 I Painting RallyState 56
+2011.09.08 21:25.07 I State: RallyState 57
+2011.09.08 21:25.07 I Painting RallyState 57
+2011.09.08 21:25.07 I State: RallyState 58
+2011.09.08 21:25.07 I Painting RallyState 58
+2011.09.08 21:25.07 I Total frames: 100
+2011.09.08 21:25.07 I Time/frame:   14448840 ns
+2011.09.08 21:25.07 I Frames/s:   69
+2011.09.08 21:25.07 I State: RallyState 59
+2011.09.08 21:25.07 I Painting RallyState 59
+2011.09.08 21:25.07 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 68.84977746691449, 248.0320851562613, 76.25] for next checkpoint1
+2011.09.08 21:25.07 I State: RallyState 60
+2011.09.08 21:25.07 I Painting RallyState 60
+2011.09.08 21:25.07 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 232.40331335803023, 455.67563555460987, 84.75] for next checkpoint3
+2011.09.08 21:25.08 I State: RallyState 61
+2011.09.08 21:25.08 I Painting RallyState 61
+2011.09.08 21:25.08 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 109.16995331914474, 391.7312627676951, 74.5] for next checkpoint2
+2011.09.08 21:25.08 I State: RallyState 62
+2011.09.08 21:25.08 I Painting RallyState 62
+2011.09.08 21:25.08 I State: RallyState 63
+2011.09.08 21:25.08 I Painting RallyState 63
+2011.09.08 21:25.08 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 395.7454516389495, 417.71424630770923, 84.0] for next checkpoint4
+2011.09.08 21:25.08 I State: RallyState 64
+2011.09.08 21:25.08 I Painting RallyState 64
+2011.09.08 21:25.08 I State: RallyState 65
+2011.09.08 21:25.08 I Painting RallyState 65
+2011.09.08 21:25.08 I State: RallyState 66
+2011.09.08 21:25.08 I Painting RallyState 66
+2011.09.08 21:25.08 I State: RallyState 67
+2011.09.08 21:25.08 I Painting RallyState 67
+2011.09.08 21:25.08 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 101.55175116518367, 395.00147865457194, 72.25] for next checkpoint2
+2011.09.08 21:25.08 I State: RallyState 68
+2011.09.08 21:25.08 I Painting RallyState 68
+2011.09.08 21:25.08 I State: RallyState 69
+2011.09.08 21:25.08 I Painting RallyState 69
+2011.09.08 21:25.08 I State: RallyState 70
+2011.09.08 21:25.08 I Painting RallyState 70
+2011.09.08 21:25.09 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 411.6998307534816, 430.5984055461168, 82.25] for next checkpoint4
+2011.09.08 21:25.09 I State: RallyState 71
+2011.09.08 21:25.09 I Painting RallyState 71
+2011.09.08 21:25.09 I State: RallyState 72
+2011.09.08 21:25.09 I Painting RallyState 72
+2011.09.08 21:25.09 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 256.3141001550368, 476.9688207876675, 71.75] for next checkpoint3
+2011.09.08 21:25.09 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 537.1364303381008, 330.00328398125004, 81.75] for next checkpoint5
+2011.09.08 21:25.09 I State: RallyState 73
+2011.09.08 21:25.09 I Painting RallyState 73
+2011.09.08 21:25.09 I State: RallyState 74
+2011.09.08 21:25.09 I Painting RallyState 74
+2011.09.08 21:25.09 I State: RallyState 75
+2011.09.08 21:25.09 I Painting RallyState 75
+2011.09.08 21:25.09 I State: RallyState 76
+2011.09.08 21:25.09 I Painting RallyState 76
+2011.09.08 21:25.09 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 238.32607512178606, 472.25967190691955, 67.75] for next checkpoint3
+2011.09.08 21:25.09 I State: RallyState 77
+2011.09.08 21:25.09 I Painting RallyState 77
+2011.09.08 21:25.09 I State: RallyState 78
+2011.09.08 21:25.09 I Painting RallyState 78
+2011.09.08 21:25.09 I State: RallyState 79
+2011.09.08 21:25.09 I Painting RallyState 79
+2011.09.08 21:25.09 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 533.338811414974, 317.09888132843537, 80.0] for next checkpoint5
+2011.09.08 21:25.10 I State: RallyState 80
+2011.09.08 21:25.10 I Painting RallyState 80
+2011.09.08 21:25.10 I State: RallyState 81
+2011.09.08 21:25.10 I Painting RallyState 81
+2011.09.08 21:25.10 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 407.49860241033133, 413.1827192524279, 69.5] for next checkpoint4
+2011.09.08 21:25.10 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 638.6346800613334, 201.44337684179763, 79.5] for next checkpoint6
+2011.09.08 21:25.10 I State: RallyState 82
+2011.09.08 21:25.10 I Painting RallyState 82
+2011.09.08 21:25.10 I State: RallyState 83
+2011.09.08 21:25.10 I Painting RallyState 83
+2011.09.08 21:25.10 I State: RallyState 84
+2011.09.08 21:25.10 I Painting RallyState 84
+2011.09.08 21:25.10 I State: RallyState 85
+2011.09.08 21:25.10 I Painting RallyState 85
+2011.09.08 21:25.10 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 402.4280685216218, 424.64087588068975, 63.25] for next checkpoint4
+2011.09.08 21:25.10 I State: RallyState 86
+2011.09.08 21:25.10 I Painting RallyState 86
+2011.09.08 21:25.10 I State: RallyState 87
+2011.09.08 21:25.10 I Painting RallyState 87
+2011.09.08 21:25.10 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 642.8844591037864, 207.4300426289372, 78.0] for next checkpoint6
+2011.09.08 21:25.10 I State: RallyState 88
+2011.09.08 21:25.10 I Painting RallyState 88
+2011.09.08 21:25.11 I State: RallyState 89
+2011.09.08 21:25.11 I Painting RallyState 89
+2011.09.08 21:25.11 I Sending match state to: 0
+2011.09.08 21:25.11 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 523.0928298300994, 316.7041880363349, 67.5] for next checkpoint5
+2011.09.08 21:25.11 I State: RallyState 90
+2011.09.08 21:25.11 I Painting RallyState 90
+2011.09.08 21:25.11 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 777.7245943754913, 110.8651446686255, 77.25] for next checkpoint7
+2011.09.08 21:25.11 I State: RallyState 91
+2011.09.08 21:25.11 I Painting RallyState 91
+2011.09.08 21:25.11 I State: RallyState 92
+2011.09.08 21:25.11 I Painting RallyState 92
+2011.09.08 21:25.11 I State: RallyState 93
+2011.09.08 21:25.11 I Painting RallyState 93
+2011.09.08 21:25.11 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 527.0946447669412, 328.2562391357353, 59.25] for next checkpoint5
+2011.09.08 21:25.11 I State: RallyState 94
+2011.09.08 21:25.11 I Painting RallyState 94
+2011.09.08 21:25.11 I State: RallyState 95
+2011.09.08 21:25.11 I Painting RallyState 95
+2011.09.08 21:25.11 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 772.273621424917, 131.1687267000921, 76.0] for next checkpoint7
+2011.09.08 21:25.11 I State: RallyState 96
+2011.09.08 21:25.11 I Painting RallyState 96
+2011.09.08 21:25.11 I State: RallyState 97
+2011.09.08 21:25.11 I Painting RallyState 97
+2011.09.08 21:25.11 I State: RallyState 98
+2011.09.08 21:25.11 I Painting RallyState 98
+2011.09.08 21:25.11 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 643.5009677775255, 202.82726342503426, 65.25] for next checkpoint6
+2011.09.08 21:25.12 I State: RallyState 99
+2011.09.08 21:25.12 I Painting RallyState 99
+2011.09.08 21:25.12 I State: RallyState 100
+2011.09.08 21:25.12 I Painting RallyState 100
+2011.09.08 21:25.12 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 933.3483543669524, 174.44557501797993, 74.75] for next checkpoint8
+2011.09.08 21:25.12 I State: RallyState 101
+2011.09.08 21:25.12 I Painting RallyState 101
+2011.09.08 21:25.12 I State: RallyState 102
+2011.09.08 21:25.12 I Painting RallyState 102
+2011.09.08 21:25.12 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 651.6264304048296, 199.18074240940143, 54.75] for next checkpoint6
+2011.09.08 21:25.12 I State: RallyState 103
+2011.09.08 21:25.12 I Painting RallyState 103
+2011.09.08 21:25.12 I State: RallyState 104
+2011.09.08 21:25.12 I Painting RallyState 104
+2011.09.08 21:25.12 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 920.4520186801469, 165.81190066061293, 73.75] for next checkpoint8
+2011.09.08 21:25.12 I State: RallyState 105
+2011.09.08 21:25.12 I Painting RallyState 105
+2011.09.08 21:25.12 I State: RallyState 106
+2011.09.08 21:25.12 I Painting RallyState 106
+2011.09.08 21:25.12 I State: RallyState 107
+2011.09.08 21:25.12 I Painting RallyState 107
+2011.09.08 21:25.12 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 781.5879423225224, 119.43548006067137, 63.0] for next checkpoint7
+2011.09.08 21:25.12 I State: RallyState 108
+2011.09.08 21:25.12 I Painting RallyState 108
+2011.09.08 21:25.13 I State: RallyState 109
+2011.09.08 21:25.13 I Painting RallyState 109
+2011.09.08 21:25.13 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 956.6526292466222, 327.5208377797852, 72.5] for next checkpoint9
+2011.09.08 21:25.13 I State: RallyState 110
+2011.09.08 21:25.13 I Painting RallyState 110
+2011.09.08 21:25.13 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 779.223520647766, 117.5578499328779, 50.75] for next checkpoint7
+2011.09.08 21:25.13 I State: RallyState 111
+2011.09.08 21:25.13 I Painting RallyState 111
+2011.09.08 21:25.13 I State: RallyState 112
+2011.09.08 21:25.13 I Painting RallyState 112
+2011.09.08 21:25.13 I State: RallyState 113
+2011.09.08 21:25.13 I Painting RallyState 113
+2011.09.08 21:25.13 I State: RallyState 114
+2011.09.08 21:25.13 I Painting RallyState 114
+2011.09.08 21:25.13 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 959.8555717680648, 327.16916669611953, 71.25] for next checkpoint9
+2011.09.08 21:25.13 I State: RallyState 115
+2011.09.08 21:25.13 I Painting RallyState 115
+2011.09.08 21:25.13 I State: RallyState 116
+2011.09.08 21:25.13 I Painting RallyState 116
+2011.09.08 21:25.13 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 923.8014468299674, 178.28379533692814, 60.75] for next checkpoint8
+2011.09.08 21:25.13 I State: RallyState 117
+2011.09.08 21:25.13 I Painting RallyState 117
+2011.09.08 21:25.13 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 874.7842352678106, 448.475932946998, 70.5] for next checkpoint10
+2011.09.08 21:25.14 I State: RallyState 118
+2011.09.08 21:25.14 I Painting RallyState 118
+2011.09.08 21:25.14 I State: RallyState 119
+2011.09.08 21:25.14 I Painting RallyState 119
+2011.09.08 21:25.14 I State: RallyState 120
+2011.09.08 21:25.14 I Painting RallyState 120
+2011.09.08 21:25.14 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 941.7438972410212, 172.90809967201028, 45.75] for next checkpoint8
+2011.09.08 21:25.14 I State: RallyState 121
+2011.09.08 21:25.14 I Painting RallyState 121
+2011.09.08 21:25.14 I State: RallyState 122
+2011.09.08 21:25.14 I Painting RallyState 122
+2011.09.08 21:25.14 I State: RallyState 123
+2011.09.08 21:25.14 I Painting RallyState 123
+2011.09.08 21:25.14 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 878.3300449577199, 468.07992506866236, 69.0] for next checkpoint10
+2011.09.08 21:25.14 I State: RallyState 124
+2011.09.08 21:25.14 I Painting RallyState 124
+2011.09.08 21:25.14 I State: RallyState 125
+2011.09.08 21:25.14 I Painting RallyState 125
+2011.09.08 21:25.14 I ----- Frames: 200
+2011.09.08 21:25.14 I ----- Time/frame:   17262738 ns
+2011.09.08 21:25.14 I ----- Frames/s:   57
+2011.09.08 21:25.14 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 956.5399372088942, 324.01130717823054, 58.5] for next checkpoint9
+2011.09.08 21:25.14 I State: RallyState 126
+2011.09.08 21:25.14 I Painting RallyState 126
+2011.09.08 21:25.14 I State: RallyState 127
+2011.09.08 21:25.14 I Painting RallyState 127
+2011.09.08 21:25.14 I State: RallyState 128
+2011.09.08 21:25.14 I Painting RallyState 128
+2011.09.08 21:25.15 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 716.3501574480792, 470.74995429855215, 67.75] for next checkpoint11
+2011.09.08 21:25.15 I State: RallyState 129
+2011.09.08 21:25.15 I Painting RallyState 129
+2011.09.08 21:25.15 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 957.6636354650851, 333.26162449907946, 41.25] for next checkpoint9
+2011.09.08 21:25.15 I State: RallyState 130
+2011.09.08 21:25.15 I Painting RallyState 130
+2011.09.08 21:25.15 I State: RallyState 131
+2011.09.08 21:25.15 I Painting RallyState 131
+2011.09.08 21:25.15 I State: RallyState 132
+2011.09.08 21:25.15 I Painting RallyState 132
+2011.09.08 21:25.15 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 725.4268657774949, 462.4782575364823, 66.75] for next checkpoint11
+2011.09.08 21:25.15 I State: RallyState 133
+2011.09.08 21:25.15 I Painting RallyState 133
+2011.09.08 21:25.15 I State: RallyState 134
+2011.09.08 21:25.15 I Painting RallyState 134
+2011.09.08 21:25.15 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 879.7043036972125, 468.60994677883764, 56.25] for next checkpoint10
+2011.09.08 21:25.15 I State: RallyState 135
+2011.09.08 21:25.15 I Painting RallyState 135
+2011.09.08 21:25.15 I State: RallyState 136
+2011.09.08 21:25.15 I Painting RallyState 136
+2011.09.08 21:25.15 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 625.3885106271921, 364.40330681480935, 65.75] for next checkpoint12
+2011.09.08 21:25.16 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 832.4856305274002, 485.30980551256795, 55.75]
+2011.09.08 21:25.16 I State: RallyState 137
+2011.09.08 21:25.16 I Painting RallyState 137
+2011.09.08 21:25.16 I State: RallyState 138
+2011.09.08 21:25.16 I Painting RallyState 138
+2011.09.08 21:25.16 I State: RallyState 139
+2011.09.08 21:25.16 I Painting RallyState 139
+2011.09.08 21:25.16 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 880.6302070960115, 457.2709830293614, 36.25] for next checkpoint10
+2011.09.08 21:25.16 I State: RallyState 140
+2011.09.08 21:25.16 I Painting RallyState 140
+2011.09.08 21:25.16 I State: RallyState 141
+2011.09.08 21:25.16 I Painting RallyState 141
+2011.09.08 21:25.16 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 614.3770510100019, 351.65291029142014, 64.5] for next checkpoint12
+2011.09.08 21:25.16 I State: RallyState 142
+2011.09.08 21:25.16 I Painting RallyState 142
+2011.09.08 21:25.16 I State: RallyState 143
+2011.09.08 21:25.16 I Painting RallyState 143
+2011.09.08 21:25.16 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 719.4757497600901, 473.6033399935423, 44.0] for next checkpoint11
+2011.09.08 21:25.16 I State: RallyState 144
+2011.09.08 21:25.16 I Painting RallyState 144
+2011.09.08 21:25.16 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 560.3652504406107, 233.50380513277818, 63.75] for next checkpoint13
+2011.09.08 21:25.16 I State: RallyState 145
+2011.09.08 21:25.16 I Painting RallyState 145
+2011.09.08 21:25.16 I State: RallyState 146
+2011.09.08 21:25.16 I Painting RallyState 146
+2011.09.08 21:25.17 I State: RallyState 147
+2011.09.08 21:25.17 I Painting RallyState 147
+2011.09.08 21:25.17 I State: RallyState 148
+2011.09.08 21:25.17 I Painting RallyState 148
+2011.09.08 21:25.17 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 568.4045588490857, 232.51833045101972, 62.75] for next checkpoint13
+2011.09.08 21:25.17 I State: RallyState 149
+2011.09.08 21:25.17 I Painting RallyState 149
+2011.09.08 21:25.17 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 725.7483804605332, 470.2462100348822, 31.25] for next checkpoint11
+2011.09.08 21:25.17 I State: RallyState 150
+2011.09.08 21:25.17 I Painting RallyState 150
+2011.09.08 21:25.17 I State: RallyState 151
+2011.09.08 21:25.17 I Painting RallyState 151
+2011.09.08 21:25.17 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 630.2445142548715, 361.0939036321584, 42.0] for next checkpoint12
+2011.09.08 21:25.17 I State: RallyState 152
+2011.09.08 21:25.17 I Painting RallyState 152
+2011.09.08 21:25.17 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 458.376180385927, 125.49727472098259, 61.75] for next checkpoint14
+2011.09.08 21:25.17 I State: RallyState 153
+2011.09.08 21:25.17 I Painting RallyState 153
+2011.09.08 21:25.17 I State: RallyState 154
+2011.09.08 21:25.17 I Painting RallyState 154
+2011.09.08 21:25.17 I State: RallyState 155
+2011.09.08 21:25.17 I Painting RallyState 155
+2011.09.08 21:25.17 I State: RallyState 156
+2011.09.08 21:25.17 I Painting RallyState 156
+2011.09.08 21:25.17 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 462.77727144830016, 134.35986269674885, 60.75] for next checkpoint14
+2011.09.08 21:25.18 I State: RallyState 157
+2011.09.08 21:25.18 I Painting RallyState 157
+2011.09.08 21:25.18 I State: RallyState 158
+2011.09.08 21:25.18 I Painting RallyState 158
+2011.09.08 21:25.18 I Total frames: 200
+2011.09.08 21:25.18 I Time/frame:   12353958 ns
+2011.09.08 21:25.18 I Frames/s:   80
+2011.09.08 21:25.18 I State: RallyState 159
+2011.09.08 21:25.18 I Painting RallyState 159
+2011.09.08 21:25.18 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 565.3137261428275, 227.545067205338, 40.0] for next checkpoint13
+2011.09.08 21:25.18 I State: RallyState 160
+2011.09.08 21:25.18 I Painting RallyState 160
+2011.09.08 21:25.18 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 315.13761831454633, 73.56042727653522, 59.75] for next checkpoint15
+2011.09.08 21:25.18 I State: RallyState 161
+2011.09.08 21:25.18 I Painting RallyState 161
+2011.09.08 21:25.18 I State: RallyState 162
+2011.09.08 21:25.18 I Painting RallyState 162
+2011.09.08 21:25.18 I State: RallyState 163
+2011.09.08 21:25.18 I Painting RallyState 163
+2011.09.08 21:25.18 I State: RallyState 164
+2011.09.08 21:25.18 I Painting RallyState 164
+2011.09.08 21:25.18 I State: RallyState 165
+2011.09.08 21:25.18 I Painting RallyState 165
+2011.09.08 21:25.18 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 306.7638362532257, 73.32206200459325, 58.5] for next checkpoint15
+2011.09.08 21:25.18 I State: RallyState 166
+2011.09.08 21:25.18 I Painting RallyState 166
+2011.09.08 21:25.19 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 464.28380714103815, 145.9796871209547, 38.25] for next checkpoint14
+2011.09.08 21:25.19 I State: RallyState 167
+2011.09.08 21:25.19 I Painting RallyState 167
+2011.09.08 21:25.19 I State: RallyState 168
+2011.09.08 21:25.19 I Painting RallyState 168
+2011.09.08 21:25.19 I State: RallyState 169
+2011.09.08 21:25.19 I Painting RallyState 169
+2011.09.08 21:25.19 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 149.09373075835862, 92.27808391516719, 57.5] for next checkpoint0
+2011.09.08 21:25.19 I State: RallyState 170
+2011.09.08 21:25.19 I Painting RallyState 170
+2011.09.08 21:25.19 I State: RallyState 171
+2011.09.08 21:25.19 I Painting RallyState 171
+2011.09.08 21:25.19 I State: RallyState 172
+2011.09.08 21:25.19 I Painting RallyState 172
+2011.09.08 21:25.19 I State: RallyState 173
+2011.09.08 21:25.19 I Painting RallyState 173
+2011.09.08 21:25.19 I State: RallyState 174
+2011.09.08 21:25.19 I Painting RallyState 174
+2011.09.08 21:25.19 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 150.15379206584237, 93.63637238490453, 56.25] for next checkpoint0
+2011.09.08 21:25.19 I State: RallyState 175
+2011.09.08 21:25.19 I Painting RallyState 175
+2011.09.08 21:25.19 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 308.6157742509227, 81.24983265755802, 36.0] for next checkpoint15
+2011.09.08 21:25.20 I State: RallyState 176
+2011.09.08 21:25.20 I Painting RallyState 176
+2011.09.08 21:25.20 I State: RallyState 177
+2011.09.08 21:25.20 I Painting RallyState 177
+2011.09.08 21:25.20 I State: RallyState 178
+2011.09.08 21:25.20 I Painting RallyState 178
+2011.09.08 21:25.20 I Giving 2 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 430.12470035309957, 403.57408038837445, 20.505000000000003] for random checkpoint4
+2011.09.08 21:25.20 I State: RallyState 179
+2011.09.08 21:25.20 I Painting RallyState 179
+2011.09.08 21:25.20 I State: RallyState 180
+2011.09.08 21:25.20 I Painting RallyState 180
+2011.09.08 21:25.20 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 63.829050754898134, 251.00497547722992, 54.75] for next checkpoint1
+2011.09.08 21:25.20 I State: RallyState 181
+2011.09.08 21:25.20 I Painting RallyState 181
+2011.09.08 21:25.20 I State: RallyState 182
+2011.09.08 21:25.20 I Painting RallyState 182
+2011.09.08 21:25.20 I State: RallyState 183
+2011.09.08 21:25.20 I Painting RallyState 183
+2011.09.08 21:25.20 I State: RallyState 184
+2011.09.08 21:25.20 I Painting RallyState 184
+2011.09.08 21:25.20 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 62.848288675701085, 247.90427493336836, 53.75] for next checkpoint1
+2011.09.08 21:25.21 I State: RallyState 185
+2011.09.08 21:25.21 I Painting RallyState 185
+2011.09.08 21:25.21 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 144.88640612249247, 100.2278914047702, 33.5] for next checkpoint0
+2011.09.08 21:25.21 I State: RallyState 186
+2011.09.08 21:25.21 I Painting RallyState 186
+2011.09.08 21:25.21 I State: RallyState 187
+2011.09.08 21:25.21 I Painting RallyState 187
+2011.09.08 21:25.21 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 102.82095510869618, 376.3955814089675, 53.0] for next checkpoint2
+2011.09.08 21:25.21 I State: RallyState 188
+2011.09.08 21:25.21 I Painting RallyState 188
+2011.09.08 21:25.21 I State: RallyState 189
+2011.09.08 21:25.21 I Painting RallyState 189
+2011.09.08 21:25.21 I State: RallyState 190
+2011.09.08 21:25.21 I Sending match state to: 0
+2011.09.08 21:25.21 I Painting RallyState 190
+2011.09.08 21:25.21 I State: RallyState 191
+2011.09.08 21:25.21 I Painting RallyState 191
+2011.09.08 21:25.21 I State: RallyState 192
+2011.09.08 21:25.21 I Painting RallyState 192
+2011.09.08 21:25.21 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 106.9342488576199, 386.63130728950017, 51.75] for next checkpoint2
+2011.09.08 21:25.21 I State: RallyState 193
+2011.09.08 21:25.21 I Painting RallyState 193
+2011.09.08 21:25.21 I State: RallyState 194
+2011.09.08 21:25.21 I Painting RallyState 194
+2011.09.08 21:25.21 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 79.61873329751084, 245.1660111011471, 31.25] for next checkpoint1
+2011.09.08 21:25.22 I State: RallyState 195
+2011.09.08 21:25.22 I Painting RallyState 195
+2011.09.08 21:25.22 I State: RallyState 196
+2011.09.08 21:25.22 I Painting RallyState 196
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 269.8292094203132, 162.0282473122662, 17.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 197
+2011.09.08 21:25.22 I Painting RallyState 197
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 266.9823029635251, 157.34484312152654, 18.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 198
+2011.09.08 21:25.22 I Painting RallyState 198
+2011.09.08 21:25.22 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 245.50097306312125, 479.4574757184578, 50.25] for next checkpoint3
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 264.84712312093404, 153.83228997847178, 19.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 199
+2011.09.08 21:25.22 I Painting RallyState 199
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 263.2457382389907, 151.19787512118072, 20.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 200
+2011.09.08 21:25.22 I Painting RallyState 200
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 262.04469957753327, 149.22206397821242, 21.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 201
+2011.09.08 21:25.22 I Painting RallyState 201
+2011.09.08 21:25.22 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 233.5310475615056, 462.5414490496414, 49.5] for next checkpoint3
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 261.14392058144017, 147.7402056209862, 22.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 202
+2011.09.08 21:25.22 I Painting RallyState 202
+2011.09.08 21:25.22 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 98.97671136917252, 392.1260960580114, 29.25] for next checkpoint2
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 260.46833633437035, 146.6288118530665, 23.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 203
+2011.09.08 21:25.22 I Painting RallyState 203
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 259.96164814906797, 145.79526652712676, 24.560000000000002]
+2011.09.08 21:25.22 I State: RallyState 204
+2011.09.08 21:25.22 I Painting RallyState 204
+2011.09.08 21:25.22 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 259.5816320100912, 145.17010753267195, 25.560000000000002]
+2011.09.08 21:25.23 I State: RallyState 205
+2011.09.08 21:25.23 I Painting RallyState 205
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 259.2966199058586, 144.70123828683083, 26.560000000000002]
+2011.09.08 21:25.23 I State: RallyState 206
+2011.09.08 21:25.23 I Painting RallyState 206
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 259.08286082768416, 144.34958635245, 27.560000000000002]
+2011.09.08 21:25.23 I State: RallyState 207
+2011.09.08 21:25.23 I Painting RallyState 207
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.9225415190533, 144.08584740166435, 28.560000000000002]
+2011.09.08 21:25.23 I State: RallyState 208
+2011.09.08 21:25.23 I Painting RallyState 208
+2011.09.08 21:25.23 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 409.4435897115831, 419.0742615135861, 47.75] for next checkpoint4
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.8023020375802, 143.88804318857512, 29.560000000000002]
+2011.09.08 21:25.23 I State: RallyState 209
+2011.09.08 21:25.23 I Painting RallyState 209
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.7121224264754, 143.73969002875822, 30.560000000000002]
+2011.09.08 21:25.23 I State: RallyState 210
+2011.09.08 21:25.23 I Painting RallyState 210
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.64448771814676, 143.62842515889554, 31.560000000000002]
+2011.09.08 21:25.23 I State: RallyState 211
+2011.09.08 21:25.23 I Painting RallyState 211
+2011.09.08 21:25.23 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 412.8576369090705, 420.35249429268845, 47.0] for next checkpoint4
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.5937616869003, 143.54497650649853, 32.56]
+2011.09.08 21:25.23 I State: RallyState 212
+2011.09.08 21:25.23 I Painting RallyState 212
+2011.09.08 21:25.23 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 240.26674232613192, 479.3170416751363, 26.75] for next checkpoint3
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.55571716346543, 143.48239001720077, 33.56]
+2011.09.08 21:25.23 I State: RallyState 213
+2011.09.08 21:25.23 I Painting RallyState 213
+2011.09.08 21:25.23 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.5271837708893, 143.43545015022744, 34.56]
+2011.09.08 21:25.23 I State: RallyState 214
+2011.09.08 21:25.23 I Painting RallyState 214
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.5057837264572, 143.40024524999745, 35.56]
+2011.09.08 21:25.24 I State: RallyState 215
+2011.09.08 21:25.24 I Painting RallyState 215
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.48973369313313, 143.37384157482495, 36.56]
+2011.09.08 21:25.24 I State: RallyState 216
+2011.09.08 21:25.24 I Painting RallyState 216
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4776961681401, 143.3540388184456, 37.56]
+2011.09.08 21:25.24 I State: RallyState 217
+2011.09.08 21:25.24 I Painting RallyState 217
+2011.09.08 21:25.24 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 531.6640174687047, 312.1056822135912, 45.5] for next checkpoint5
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4686680243953, 143.33918675116107, 38.56]
+2011.09.08 21:25.24 I State: RallyState 218
+2011.09.08 21:25.24 I Painting RallyState 218
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4618969165867, 143.32804770069768, 39.56]
+2011.09.08 21:25.24 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 561.7619320475573, 291.23808683286603, 45.25]
+2011.09.08 21:25.24 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 516.0587335416383, 343.01796132751514, 45.25]
+2011.09.08 21:25.24 I State: RallyState 219
+2011.09.08 21:25.24 I Painting RallyState 219
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4568185857302, 143.31969341285014, 40.56]
+2011.09.08 21:25.24 I State: RallyState 220
+2011.09.08 21:25.24 I Painting RallyState 220
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4530098375879, 143.31342769696448, 41.56]
+2011.09.08 21:25.24 I State: RallyState 221
+2011.09.08 21:25.24 I Painting RallyState 221
+2011.09.08 21:25.24 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 395.94788676554083, 419.1808649115198, 24.5] for next checkpoint4
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.45015327648116, 143.30872841005024, 42.56]
+2011.09.08 21:25.24 I State: RallyState 222
+2011.09.08 21:25.24 I Painting RallyState 222
+2011.09.08 21:25.24 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 530.9370475300855, 322.53971844964434, 34.25] for next checkpoint5
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4480108556511, 143.30520394486456, 43.56]
+2011.09.08 21:25.24 I State: RallyState 223
+2011.09.08 21:25.24 I Painting RallyState 223
+2011.09.08 21:25.24 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44640404002854, 143.3025605959753, 44.56]
+2011.09.08 21:25.25 I State: RallyState 224
+2011.09.08 21:25.25 I Painting RallyState 224
+2011.09.08 21:25.25 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 644.3895392539241, 208.39014532059488, 33.75] for next checkpoint6
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44519892831164, 143.30057808430837, 45.56]
+2011.09.08 21:25.25 I State: RallyState 225
+2011.09.08 21:25.25 I Painting RallyState 225
+2011.09.08 21:25.25 I ----- Frames: 300
+2011.09.08 21:25.25 I ----- Time/frame:   15676494 ns
+2011.09.08 21:25.25 I ----- Frames/s:   63
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44429509452397, 143.29909120055817, 46.56]
+2011.09.08 21:25.25 I State: RallyState 226
+2011.09.08 21:25.25 I Painting RallyState 226
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4436172191832, 143.2979760377455, 47.56]
+2011.09.08 21:25.25 I State: RallyState 227
+2011.09.08 21:25.25 I Painting RallyState 227
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4431088126776, 143.29713966563602, 48.56]
+2011.09.08 21:25.25 I State: RallyState 228
+2011.09.08 21:25.25 I Painting RallyState 228
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44272750779845, 143.2965123865539, 49.56]
+2011.09.08 21:25.25 I State: RallyState 229
+2011.09.08 21:25.25 I Painting RallyState 229
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44244152913905, 143.2960419272423, 50.56]
+2011.09.08 21:25.25 I State: RallyState 230
+2011.09.08 21:25.25 I Painting RallyState 230
+2011.09.08 21:25.25 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 532.7585664479012, 313.77587367039297, 22.25] for next checkpoint5
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44222704514453, 143.2956890827586, 51.56]
+2011.09.08 21:25.25 I State: RallyState 231
+2011.09.08 21:25.25 I Painting RallyState 231
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4420661821486, 143.29542444939582, 52.56]
+2011.09.08 21:25.25 I State: RallyState 232
+2011.09.08 21:25.25 I Painting RallyState 232
+2011.09.08 21:25.25 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 654.1084070892641, 205.4051271950534, 31.75] for next checkpoint6
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44194553490166, 143.29522597437375, 53.56]
+2011.09.08 21:25.25 I State: RallyState 233
+2011.09.08 21:25.25 I Painting RallyState 233
+2011.09.08 21:25.25 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 774.4409881234851, 104.30472253610486, 31.5] for next checkpoint7
+2011.09.08 21:25.25 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4418550494665, 143.2950771181072, 54.56]
+2011.09.08 21:25.26 I State: RallyState 234
+2011.09.08 21:25.26 I Painting RallyState 234
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44178718539007, 143.29496547590728, 55.56]
+2011.09.08 21:25.26 I State: RallyState 235
+2011.09.08 21:25.26 I Painting RallyState 235
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4417362873328, 143.29488174425734, 56.56]
+2011.09.08 21:25.26 I State: RallyState 236
+2011.09.08 21:25.26 I Painting RallyState 236
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4416981137898, 143.2948189455199, 57.56]
+2011.09.08 21:25.26 I State: RallyState 237
+2011.09.08 21:25.26 I Painting RallyState 237
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4416694836326, 143.2947718464668, 58.56]
+2011.09.08 21:25.26 I State: RallyState 238
+2011.09.08 21:25.26 I Painting RallyState 238
+2011.09.08 21:25.26 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 644.027355949119, 204.22573330173836, 20.25] for next checkpoint6
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4416480110147, 143.29473652217698, 59.56]
+2011.09.08 21:25.26 I State: RallyState 239
+2011.09.08 21:25.26 I Painting RallyState 239
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44163190655127, 143.2947100289596, 60.56]
+2011.09.08 21:25.26 I State: RallyState 240
+2011.09.08 21:25.26 I Painting RallyState 240
+2011.09.08 21:25.26 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 772.2133084247225, 114.2579499038226, 29.75] for next checkpoint7
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44161982820367, 143.29469015904658, 61.56]
+2011.09.08 21:25.26 I State: RallyState 241
+2011.09.08 21:25.26 I Painting RallyState 241
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.441610769443, 143.2946752566118, 62.56]
+2011.09.08 21:25.26 I State: RallyState 242
+2011.09.08 21:25.26 I Painting RallyState 242
+2011.09.08 21:25.26 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4416039753725, 143.29466407978575, 63.56]
+2011.09.08 21:25.27 I State: RallyState 243
+2011.09.08 21:25.27 I Painting RallyState 243
+2011.09.08 21:25.27 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 940.2323951984561, 164.09027417708464, 29.0] for next checkpoint8
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44159887981965, 143.29465569716618, 64.56]
+2011.09.08 21:25.27 I State: RallyState 244
+2011.09.08 21:25.27 I Painting RallyState 244
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.441595058155, 143.29464941020152, 65.56]
+2011.09.08 21:25.27 I State: RallyState 245
+2011.09.08 21:25.27 I Painting RallyState 245
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44159219190647, 143.29464469497802, 66.56]
+2011.09.08 21:25.27 I State: RallyState 246
+2011.09.08 21:25.27 I Painting RallyState 246
+2011.09.08 21:25.27 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 777.5915294025426, 134.05845746393157, 18.25] for next checkpoint7
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44159004222007, 143.29464115856038, 67.56]
+2011.09.08 21:25.27 I State: RallyState 247
+2011.09.08 21:25.27 I Painting RallyState 247
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4415884299553, 143.29463850624717, 68.56]
+2011.09.08 21:25.27 I State: RallyState 248
+2011.09.08 21:25.27 I Painting RallyState 248
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44158722075673, 143.29463651701226, 69.56]
+2011.09.08 21:25.27 I State: RallyState 249
+2011.09.08 21:25.27 I Painting RallyState 249
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4415863138578, 143.29463502508608, 70.56]
+2011.09.08 21:25.27 I State: RallyState 250
+2011.09.08 21:25.27 I Painting RallyState 250
+2011.09.08 21:25.27 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 922.6760569787008, 174.6545089384192, 27.25] for next checkpoint8
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.4415856336836, 143.29463390614143, 71.56]
+2011.09.08 21:25.27 I State: RallyState 251
+2011.09.08 21:25.27 I Painting RallyState 251
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 258.44158512355295, 143.29463306693296, 72.31]
+2011.09.08 21:25.27 I State: RallyState 252
+2011.09.08 21:25.27 I Painting RallyState 252
+2011.09.08 21:25.27 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 255.94158474095497, 138.96450549632252, 73.06]
+2011.09.08 21:25.28 I State: RallyState 253
+2011.09.08 21:25.28 I Painting RallyState 253
+2011.09.08 21:25.28 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 252.35648368400982, 131.01844673605115, 73.81]
+2011.09.08 21:25.28 I State: RallyState 254
+2011.09.08 21:25.28 I Painting RallyState 254
+2011.09.08 21:25.28 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 960.0983764969793, 346.0729326947102, 26.25] for next checkpoint9
+2011.09.08 21:25.28 I State: RallyState 255
+2011.09.08 21:25.28 I Painting RallyState 255
+2011.09.08 21:25.28 I State: RallyState 256
+2011.09.08 21:25.28 I Painting RallyState 256
+2011.09.08 21:25.28 I State: RallyState 257
+2011.09.08 21:25.28 I Painting RallyState 257
+2011.09.08 21:25.28 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 933.9810943277702, 168.8025312048839, 15.5] for next checkpoint8
+2011.09.08 21:25.28 I State: RallyState 258
+2011.09.08 21:25.28 I Painting RallyState 258
+2011.09.08 21:25.28 I Total frames: 300
+2011.09.08 21:25.28 I Time/frame:   11391784 ns
+2011.09.08 21:25.28 I Frames/s:   87
+2011.09.08 21:25.28 I State: RallyState 259
+2011.09.08 21:25.28 I Painting RallyState 259
+2011.09.08 21:25.28 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 948.3647701696005, 319.185586340132, 25.0] for next checkpoint9
+2011.09.08 21:25.28 I Giving 2 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 281.746524945067, 67.86339567633878, 73.31] for random checkpoint15
+2011.09.08 21:25.28 I State: RallyState 260
+2011.09.08 21:25.28 I Painting RallyState 260
+2011.09.08 21:25.28 I State: RallyState 261
+2011.09.08 21:25.28 I Painting RallyState 261
+2011.09.08 21:25.28 I State: RallyState 262
+2011.09.08 21:25.28 I Painting RallyState 262
+2011.09.08 21:25.28 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 871.0477542477364, 461.3721836178812, 24.25] for next checkpoint10
+2011.09.08 21:25.29 I State: RallyState 263
+2011.09.08 21:25.29 I Painting RallyState 263
+2011.09.08 21:25.29 I State: RallyState 264
+2011.09.08 21:25.29 I Painting RallyState 264
+2011.09.08 21:25.29 I State: RallyState 265
+2011.09.08 21:25.29 I Painting RallyState 265
+2011.09.08 21:25.29 I State: RallyState 266
+2011.09.08 21:25.29 I Painting RallyState 266
+2011.09.08 21:25.29 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 946.7746186956986, 326.1729602951477, 13.25] for next checkpoint9
+2011.09.08 21:25.29 I State: RallyState 267
+2011.09.08 21:25.29 I Painting RallyState 267
+2011.09.08 21:25.29 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 872.5872476738588, 445.1265929672169, 23.0] for next checkpoint10
+2011.09.08 21:25.29 I State: RallyState 268
+2011.09.08 21:25.29 I Painting RallyState 268
+2011.09.08 21:25.29 I State: RallyState 269
+2011.09.08 21:25.29 I Painting RallyState 269
+2011.09.08 21:25.29 I State: RallyState 270
+2011.09.08 21:25.29 I Painting RallyState 270
+2011.09.08 21:25.29 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 736.6737397158106, 467.24475713171347, 22.25] for next checkpoint11
+2011.09.08 21:25.29 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 270.0468783169414, 147.9884452610314, 70.56]
+2011.09.08 21:25.29 I State: RallyState 271
+2011.09.08 21:25.29 I Painting RallyState 271
+2011.09.08 21:25.29 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 253.70753715592093, 148.30801938006923, 71.31]
+2011.09.08 21:25.29 I State: RallyState 272
+2011.09.08 21:25.29 I Painting RallyState 272
+2011.09.08 21:25.30 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 236.67150764023143, 147.08584151798118, 72.06]
+2011.09.08 21:25.30 I State: RallyState 273
+2011.09.08 21:25.30 I Painting RallyState 273
+2011.09.08 21:25.30 I State: RallyState 274
+2011.09.08 21:25.30 I Painting RallyState 274
+2011.09.08 21:25.30 I State: RallyState 275
+2011.09.08 21:25.30 I Painting RallyState 275
+2011.09.08 21:25.30 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 883.8486906070384, 473.7782531872713, 11.0] for next checkpoint10
+2011.09.08 21:25.30 I State: RallyState 276
+2011.09.08 21:25.30 I Painting RallyState 276
+2011.09.08 21:25.30 I State: RallyState 277
+2011.09.08 21:25.30 I Painting RallyState 277
+2011.09.08 21:25.30 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 148.52596497252355, 122.02790965280022, 71.81] for next checkpoint0
+2011.09.08 21:25.30 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 720.1494218357728, 477.77575495220424, 20.5] for next checkpoint11
+2011.09.08 21:25.30 I State: RallyState 278
+2011.09.08 21:25.30 I Painting RallyState 278
+2011.09.08 21:25.30 I State: RallyState 279
+2011.09.08 21:25.30 I Painting RallyState 279
+2011.09.08 21:25.30 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 626.6035123319648, 359.38595394771244, 20.0] for next checkpoint12
+2011.09.08 21:25.30 I State: RallyState 280
+2011.09.08 21:25.30 I Painting RallyState 280
+2011.09.08 21:25.30 I State: RallyState 281
+2011.09.08 21:25.30 I Painting RallyState 281
+2011.09.08 21:25.30 I State: RallyState 282
+2011.09.08 21:25.30 I Painting RallyState 282
+2011.09.08 21:25.31 I State: RallyState 283
+2011.09.08 21:25.31 I Painting RallyState 283
+2011.09.08 21:25.31 I State: RallyState 284
+2011.09.08 21:25.31 I Painting RallyState 284
+2011.09.08 21:25.31 I State: RallyState 285
+2011.09.08 21:25.31 I Painting RallyState 285
+2011.09.08 21:25.31 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 722.7100209974458, 461.41084560765785, 8.5] for next checkpoint11
+2011.09.08 21:25.31 I State: RallyState 286
+2011.09.08 21:25.31 I Painting RallyState 286
+2011.09.08 21:25.31 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 618.9838802230556, 354.39359007027883, 18.25] for next checkpoint12
+2011.09.08 21:25.31 I State: RallyState 287
+2011.09.08 21:25.31 I Painting RallyState 287
+2011.09.08 21:25.31 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 573.5001810771668, 225.1529862851907, 18.0] for next checkpoint13
+2011.09.08 21:25.31 I State: RallyState 288
+2011.09.08 21:25.31 I Painting RallyState 288
+2011.09.08 21:25.31 I State: RallyState 289
+2011.09.08 21:25.31 I Painting RallyState 289
+2011.09.08 21:25.31 I Sending match state to: 0
+2011.09.08 21:25.31 I State: RallyState 290
+2011.09.08 21:25.31 I Painting RallyState 290
+2011.09.08 21:25.31 I State: RallyState 291
+2011.09.08 21:25.31 I Painting RallyState 291
+2011.09.08 21:25.31 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 64.32616808399712, 251.46620705296544, 68.31] for next checkpoint1
+2011.09.08 21:25.32 I State: RallyState 292
+2011.09.08 21:25.32 I Painting RallyState 292
+2011.09.08 21:25.32 I State: RallyState 293
+2011.09.08 21:25.32 I Painting RallyState 293
+2011.09.08 21:25.32 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 621.2324192482023, 354.66742341276006, 6.5] for next checkpoint12
+2011.09.08 21:25.32 I State: RallyState 294
+2011.09.08 21:25.32 I Painting RallyState 294
+2011.09.08 21:25.32 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 569.7095933329912, 215.1222089418573, 16.25] for next checkpoint13
+2011.09.08 21:25.32 I State: RallyState 295
+2011.09.08 21:25.32 I Painting RallyState 295
+2011.09.08 21:25.32 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 466.44241719015326, 125.97713384276041, 16.0] for next checkpoint14
+2011.09.08 21:25.32 I State: RallyState 296
+2011.09.08 21:25.32 I Painting RallyState 296
+2011.09.08 21:25.32 I State: RallyState 297
+2011.09.08 21:25.32 I Painting RallyState 297
+2011.09.08 21:25.32 I State: RallyState 298
+2011.09.08 21:25.32 I Painting RallyState 298
+2011.09.08 21:25.32 I State: RallyState 299
+2011.09.08 21:25.32 I Painting RallyState 299
+2011.09.08 21:25.32 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 115.70556554767516, 393.1134688745436, 66.31] for next checkpoint2
+2011.09.08 21:25.32 I State: RallyState 300
+2011.09.08 21:25.32 I Painting RallyState 300
+2011.09.08 21:25.33 I State: RallyState 301
+2011.09.08 21:25.33 I Painting RallyState 301
+2011.09.08 21:25.33 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 546.6694587242168, 226.74873129591916, 4.5] for next checkpoint13
+2011.09.08 21:25.33 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 468.4189635969638, 141.72703601541025, 14.5] for next checkpoint14
+2011.09.08 21:25.33 I State: RallyState 302
+2011.09.08 21:25.33 I Painting RallyState 302
+2011.09.08 21:25.33 I State: RallyState 303
+2011.09.08 21:25.33 I Painting RallyState 303
+2011.09.08 21:25.33 I State: RallyState 304
+2011.09.08 21:25.33 I Painting RallyState 304
+2011.09.08 21:25.33 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 314.06157330572734, 66.91362561684159, 13.75] for next checkpoint15
+2011.09.08 21:25.33 I State: RallyState 305
+2011.09.08 21:25.33 I Painting RallyState 305
+2011.09.08 21:25.33 I State: RallyState 306
+2011.09.08 21:25.33 I Painting RallyState 306
+2011.09.08 21:25.33 I State: RallyState 307
+2011.09.08 21:25.33 I Painting RallyState 307
+2011.09.08 21:25.33 I State: RallyState 308
+2011.09.08 21:25.33 I Painting RallyState 308
+2011.09.08 21:25.33 I State: RallyState 309
+2011.09.08 21:25.33 I Painting RallyState 309
+2011.09.08 21:25.33 I State: RallyState 310
+2011.09.08 21:25.33 I Painting RallyState 310
+2011.09.08 21:25.33 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 255.1987031478588, 477.141100733813, 63.56] for next checkpoint3
+2011.09.08 21:25.33 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 307.5930163574377, 72.2402080434638, 12.25] for next checkpoint15
+2011.09.08 21:25.34 I State: RallyState 311
+2011.09.08 21:25.34 I Painting RallyState 311
+2011.09.08 21:25.34 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 450.5351614679324, 110.38698573028067, 2.0] for next checkpoint14
+2011.09.08 21:25.34 I State: RallyState 312
+2011.09.08 21:25.34 I Painting RallyState 312
+2011.09.08 21:25.34 I State: RallyState 313
+2011.09.08 21:25.34 I Painting RallyState 313
+2011.09.08 21:25.34 I State: RallyState 314
+2011.09.08 21:25.34 I Painting RallyState 314
+2011.09.08 21:25.34 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 138.04439445054862, 90.75582533640603, 11.25] for next checkpoint0
+2011.09.08 21:25.34 I State: RallyState 315
+2011.09.08 21:25.34 I Painting RallyState 315
+2011.09.08 21:25.34 I State: RallyState 316
+2011.09.08 21:25.34 I Painting RallyState 316
+2011.09.08 21:25.34 I State: RallyState 317
+2011.09.08 21:25.34 I Painting RallyState 317
+2011.09.08 21:25.34 I State: RallyState 318
+2011.09.08 21:25.34 I Painting RallyState 318
+2011.09.08 21:25.34 I State: RallyState 319
+2011.09.08 21:25.34 I Painting RallyState 319
+2011.09.08 21:25.34 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 155.06486993573927, 97.00427981569557, 10.0] for next checkpoint0
+2011.09.08 21:25.34 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 408.98676487754705, 408.41789620204844, 61.31] for next checkpoint4
+2011.09.08 21:25.34 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 310.16784415344654, 75.43660722245575, 0.0] for next checkpoint15
+2011.09.08 21:25.34 I State: RallyState 320
+2011.09.08 21:25.34 I Painting RallyState 320
+2011.09.08 21:25.35 I State: RallyState 321
+2011.09.08 21:25.35 I Painting RallyState 321
+2011.09.08 21:25.35 I State: RallyState 322
+2011.09.08 21:25.35 I Painting RallyState 322
+2011.09.08 21:25.35 I State: RallyState 323
+2011.09.08 21:25.35 I Painting RallyState 323
+2011.09.08 21:25.35 I State: RallyState 324
+2011.09.08 21:25.35 I Painting RallyState 324
+2011.09.08 21:25.35 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 59.66823945109014, 249.88589100637603, 8.75] for next checkpoint1
+2011.09.08 21:25.35 I State: RallyState 325
+2011.09.08 21:25.35 I Painting RallyState 325
+2011.09.08 21:25.35 I ----- Frames: 400
+2011.09.08 21:25.35 I ----- Time/frame:   14803186 ns
+2011.09.08 21:25.35 I ----- Frames/s:   67
+2011.09.08 21:25.35 I State: RallyState 326
+2011.09.08 21:25.35 I Painting RallyState 326
+2011.09.08 21:25.35 I State: RallyState 327
+2011.09.08 21:25.35 I Painting RallyState 327
+2011.09.08 21:25.35 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 535.2040937933648, 323.78634447656725, 59.31] for next checkpoint5
+2011.09.08 21:25.35 I State: RallyState 328
+2011.09.08 21:25.35 I Painting RallyState 328
+2011.09.08 21:25.35 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 70.43849863826368, 232.5922526144796, 7.75] for next checkpoint1
+2011.09.08 21:25.35 I State: RallyState 329
+2011.09.08 21:25.35 I Painting RallyState 329
+2011.09.08 21:25.35 I State: RallyState 330
+2011.09.08 21:25.35 I Painting RallyState 330
+2011.09.08 21:25.36 I State: RallyState 331
+2011.09.08 21:25.36 I Painting RallyState 331
+2011.09.08 21:25.36 I State: RallyState 332
+2011.09.08 21:25.36 I Painting RallyState 332
+2011.09.08 21:25.36 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 105.39286426614467, 386.9760602171243, 6.75] for next checkpoint2
+2011.09.08 21:25.36 I State: RallyState 333
+2011.09.08 21:25.36 I Painting RallyState 333
+2011.09.08 21:25.36 I State: RallyState 334
+2011.09.08 21:25.36 I Painting RallyState 334
+2011.09.08 21:25.36 I State: RallyState 335
+2011.09.08 21:25.36 I Painting RallyState 335
+2011.09.08 21:25.36 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 642.0946807169872, 209.22601513617917, 57.31] for next checkpoint6
+2011.09.08 21:25.36 I State: RallyState 336
+2011.09.08 21:25.36 I Painting RallyState 336
+2011.09.08 21:25.36 I State: RallyState 337
+2011.09.08 21:25.36 I Painting RallyState 337
+2011.09.08 21:25.36 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 109.99986319173198, 391.2991404213406, 5.5] for next checkpoint2
+2011.09.08 21:25.36 I State: RallyState 338
+2011.09.08 21:25.36 I Painting RallyState 338
+2011.09.08 21:25.36 I State: RallyState 339
+2011.09.08 21:25.36 I Painting RallyState 339
+2011.09.08 21:25.37 I State: RallyState 340
+2011.09.08 21:25.37 I Painting RallyState 340
+2011.09.08 21:25.37 I State: RallyState 341
+2011.09.08 21:25.37 I Painting RallyState 341
+2011.09.08 21:25.37 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 239.31693974316127, 460.14245440966573, 4.5] for next checkpoint3
+2011.09.08 21:25.37 I State: RallyState 342
+2011.09.08 21:25.37 I Painting RallyState 342
+2011.09.08 21:25.37 I State: RallyState 343
+2011.09.08 21:25.37 I Painting RallyState 343
+2011.09.08 21:25.37 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 767.6514206325014, 124.36542400590913, 55.31] for next checkpoint7
+2011.09.08 21:25.37 I State: RallyState 344
+2011.09.08 21:25.37 I Painting RallyState 344
+2011.09.08 21:25.37 I State: RallyState 345
+2011.09.08 21:25.37 I Painting RallyState 345
+2011.09.08 21:25.37 I State: RallyState 346
+2011.09.08 21:25.37 I Painting RallyState 346
+2011.09.08 21:25.37 I State: RallyState 347
+2011.09.08 21:25.37 I Painting RallyState 347
+2011.09.08 21:25.37 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 235.29290440351858, 467.8276806949768, 3.0] for next checkpoint3
+2011.09.08 21:25.37 I State: RallyState 348
+2011.09.08 21:25.37 I Painting RallyState 348
+2011.09.08 21:25.37 I State: RallyState 349
+2011.09.08 21:25.37 I Painting RallyState 349
+2011.09.08 21:25.38 I State: RallyState 350
+2011.09.08 21:25.38 I Painting RallyState 350
+2011.09.08 21:25.38 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 399.81224736891033, 420.124225265968, 2.25] for next checkpoint4
+2011.09.08 21:25.38 I State: RallyState 351
+2011.09.08 21:25.38 I Painting RallyState 351
+2011.09.08 21:25.38 I State: RallyState 352
+2011.09.08 21:25.38 I Painting RallyState 352
+2011.09.08 21:25.38 I State: RallyState 353
+2011.09.08 21:25.38 I Painting RallyState 353
+2011.09.08 21:25.38 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 931.8377868569861, 164.5821230335648, 52.81] for next checkpoint8
+2011.09.08 21:25.38 I State: RallyState 354
+2011.09.08 21:25.38 I Painting RallyState 354
+2011.09.08 21:25.38 I State: RallyState 355
+2011.09.08 21:25.38 I Painting RallyState 355
+2011.09.08 21:25.38 I State: RallyState 356
+2011.09.08 21:25.38 I Painting RallyState 356
+2011.09.08 21:25.38 I State: RallyState 357
+2011.09.08 21:25.38 I Painting RallyState 357
+2011.09.08 21:25.38 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 408.38846161322937, 403.355906140628, 0.5] for next checkpoint4
+2011.09.08 21:25.38 I State: RallyState 358
+2011.09.08 21:25.38 I Painting RallyState 358
+2011.09.08 21:25.38 I Total frames: 400
+2011.09.08 21:25.38 I Time/frame:   10865158 ns
+2011.09.08 21:25.38 I Frames/s:   92
+2011.09.08 21:25.38 I State: RallyState 359
+2011.09.08 21:25.38 I Painting RallyState 359
+2011.09.08 21:25.38 I Giving 6 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 539.5325974219076, 328.0094223373027, 0.0] for next checkpoint5
+2011.09.08 21:25.39 I State: RallyState 360
+2011.09.08 21:25.39 I Painting RallyState 360
+2011.09.08 21:25.39 I State: RallyState 361
+2011.09.08 21:25.39 I Painting RallyState 361
+2011.09.08 21:25.39 I State: RallyState 362
+2011.09.08 21:25.39 I Painting RallyState 362
+2011.09.08 21:25.39 I State: RallyState 363
+2011.09.08 21:25.39 I Painting RallyState 363
+2011.09.08 21:25.39 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 954.2313553508343, 338.36180795896325, 50.31] for next checkpoint9
+2011.09.08 21:25.39 I State: RallyState 364
+2011.09.08 21:25.39 I Painting RallyState 364
+2011.09.08 21:25.39 I State: RallyState 365
+2011.09.08 21:25.39 I Painting RallyState 365
+2011.09.08 21:25.39 I State: RallyState 366
+2011.09.08 21:25.39 I Painting RallyState 366
+2011.09.08 21:25.39 I State: RallyState 367
+2011.09.08 21:25.39 I Painting RallyState 367
+2011.09.08 21:25.39 I State: RallyState 368
+2011.09.08 21:25.39 I Painting RallyState 368
+2011.09.08 21:25.39 I State: RallyState 369
+2011.09.08 21:25.39 I Painting RallyState 369
+2011.09.08 21:25.40 I State: RallyState 370
+2011.09.08 21:25.40 I Painting RallyState 370
+2011.09.08 21:25.40 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 885.4460648941641, 453.9966037804872, 48.56] for next checkpoint10
+2011.09.08 21:25.40 I State: RallyState 371
+2011.09.08 21:25.40 I Painting RallyState 371
+2011.09.08 21:25.40 I State: RallyState 372
+2011.09.08 21:25.40 I Painting RallyState 372
+2011.09.08 21:25.40 I State: RallyState 373
+2011.09.08 21:25.40 I Painting RallyState 373
+2011.09.08 21:25.40 I State: RallyState 374
+2011.09.08 21:25.40 I Painting RallyState 374
+2011.09.08 21:25.40 I State: RallyState 375
+2011.09.08 21:25.40 I Painting RallyState 375
+2011.09.08 21:25.40 I State: RallyState 376
+2011.09.08 21:25.40 I Painting RallyState 376
+2011.09.08 21:25.40 I State: RallyState 377
+2011.09.08 21:25.40 I Painting RallyState 377
+2011.09.08 21:25.40 I State: RallyState 378
+2011.09.08 21:25.40 I Painting RallyState 378
+2011.09.08 21:25.41 I State: RallyState 379
+2011.09.08 21:25.41 I Painting RallyState 379
+2011.09.08 21:25.41 I State: RallyState 380
+2011.09.08 21:25.41 I Painting RallyState 380
+2011.09.08 21:25.41 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 716.8021650686936, 475.2727715335376, 46.06] for next checkpoint11
+2011.09.08 21:25.41 I State: RallyState 381
+2011.09.08 21:25.41 I Painting RallyState 381
+2011.09.08 21:25.41 I State: RallyState 382
+2011.09.08 21:25.41 I Painting RallyState 382
+2011.09.08 21:25.41 I State: RallyState 383
+2011.09.08 21:25.41 I Painting RallyState 383
+2011.09.08 21:25.41 I State: RallyState 384
+2011.09.08 21:25.41 I Painting RallyState 384
+2011.09.08 21:25.41 I State: RallyState 385
+2011.09.08 21:25.41 I Painting RallyState 385
+2011.09.08 21:25.41 I State: RallyState 386
+2011.09.08 21:25.41 I Painting RallyState 386
+2011.09.08 21:25.41 I State: RallyState 387
+2011.09.08 21:25.41 I Painting RallyState 387
+2011.09.08 21:25.41 I State: RallyState 388
+2011.09.08 21:25.41 I Painting RallyState 388
+2011.09.08 21:25.41 I Giving 6 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 623.9057909308739, 361.5835908438994, 44.06] for next checkpoint12
+2011.09.08 21:25.42 I State: RallyState 389
+2011.09.08 21:25.42 I Painting RallyState 389
+2011.09.08 21:25.42 I Sending match state to: 0
+2011.09.08 21:25.42 I State: RallyState 390
+2011.09.08 21:25.42 I Painting RallyState 390
+2011.09.08 21:25.42 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 581.484095828029, 267.7222498953285, 0.0]
+2011.09.08 21:25.42 I State: RallyState 391
+2011.09.08 21:25.42 I Painting RallyState 391
+2011.09.08 21:25.42 I State: RallyState 392
+2011.09.08 21:25.42 I Painting RallyState 392
+2011.09.08 21:25.42 I State: RallyState 393
+2011.09.08 21:25.42 I Painting RallyState 393
+2011.09.08 21:25.42 I State: RallyState 394
+2011.09.08 21:25.42 I Painting RallyState 394
+2011.09.08 21:25.42 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 574.2289663350372, 249.27915265576547, 0.0]
+2011.09.08 21:25.42 I State: RallyState 395
+2011.09.08 21:25.42 I Painting RallyState 395
+2011.09.08 21:25.42 I State: RallyState 396
+2011.09.08 21:25.42 I Painting RallyState 396
+2011.09.08 21:25.42 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 571.1577380509553, 242.53211920709163, 0.0]
+2011.09.08 21:25.42 I Giving 10 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 598.7733864724808, 298.0916045163213, 40.31] for tire impact
+2011.09.08 21:25.42 I State: RallyState 397
+2011.09.08 21:25.42 I Painting RallyState 397
+2011.09.08 21:25.42 I Giving 2 points to CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 562.0444594992271, 224.10674618061813, 0.0] for random checkpoint13
+2011.09.08 21:25.42 I State: RallyState 398
+2011.09.08 21:25.42 I Painting RallyState 398
+2011.09.08 21:25.43 I State: RallyState 399
+2011.09.08 21:25.43 I Painting RallyState 399
+2011.09.08 21:25.43 I State: RallyState 400
+2011.09.08 21:25.43 I Painting RallyState 400
+2011.09.08 21:25.43 I State: RallyState 401
+2011.09.08 21:25.43 I Painting RallyState 401
+2011.09.08 21:25.43 I State: RallyState 402
+2011.09.08 21:25.43 I Painting RallyState 402
+2011.09.08 21:25.43 I State: RallyState 403
+2011.09.08 21:25.43 I Painting RallyState 403
+2011.09.08 21:25.43 I State: RallyState 404
+2011.09.08 21:25.43 I Painting RallyState 404
+2011.09.08 21:25.43 I State: RallyState 405
+2011.09.08 21:25.43 I Painting RallyState 405
+2011.09.08 21:25.43 I State: RallyState 406
+2011.09.08 21:25.43 I Painting RallyState 406
+2011.09.08 21:25.43 I State: RallyState 407
+2011.09.08 21:25.43 I Painting RallyState 407
+2011.09.08 21:25.43 I State: RallyState 408
+2011.09.08 21:25.43 I Painting RallyState 408
+2011.09.08 21:25.44 I State: RallyState 409
+2011.09.08 21:25.44 I Painting RallyState 409
+2011.09.08 21:25.44 I State: RallyState 410
+2011.09.08 21:25.44 I Painting RallyState 410
+2011.09.08 21:25.44 I State: RallyState 411
+2011.09.08 21:25.44 I Painting RallyState 411
+2011.09.08 21:25.44 I State: RallyState 412
+2011.09.08 21:25.44 I Painting RallyState 412
+2011.09.08 21:25.44 I State: RallyState 413
+2011.09.08 21:25.44 I Painting RallyState 413
+2011.09.08 21:25.44 I State: RallyState 414
+2011.09.08 21:25.44 I Painting RallyState 414
+2011.09.08 21:25.44 I State: RallyState 415
+2011.09.08 21:25.44 I Painting RallyState 415
+2011.09.08 21:25.44 I State: RallyState 416
+2011.09.08 21:25.44 I Painting RallyState 416
+2011.09.08 21:25.44 I State: RallyState 417
+2011.09.08 21:25.44 I Painting RallyState 417
+2011.09.08 21:25.44 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 267.0612766688526, 146.8143083259525, 29.810000000000002]
+2011.09.08 21:25.44 I State: RallyState 418
+2011.09.08 21:25.44 I Painting RallyState 418
+2011.09.08 21:25.45 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 248.01129362177238, 140.8748990264864, 30.310000000000002]
+2011.09.08 21:25.45 I State: RallyState 419
+2011.09.08 21:25.45 I Painting RallyState 419
+2011.09.08 21:25.45 I State: RallyState 420
+2011.09.08 21:25.45 I Painting RallyState 420
+2011.09.08 21:25.45 I State: RallyState 421
+2011.09.08 21:25.45 I Painting RallyState 421
+2011.09.08 21:25.45 I State: RallyState 422
+2011.09.08 21:25.45 I Painting RallyState 422
+2011.09.08 21:25.45 I State: RallyState 423
+2011.09.08 21:25.45 I Painting RallyState 423
+2011.09.08 21:25.45 I State: RallyState 424
+2011.09.08 21:25.45 I Painting RallyState 424
+2011.09.08 21:25.45 I State: RallyState 425
+2011.09.08 21:25.45 I Painting RallyState 425
+2011.09.08 21:25.45 I ----- Frames: 500
+2011.09.08 21:25.45 I ----- Time/frame:   14327084 ns
+2011.09.08 21:25.45 I ----- Frames/s:   69
+2011.09.08 21:25.45 I State: RallyState 426
+2011.09.08 21:25.45 I Painting RallyState 426
+2011.09.08 21:25.45 I State: RallyState 427
+2011.09.08 21:25.45 I Painting RallyState 427
+2011.09.08 21:25.46 I State: RallyState 428
+2011.09.08 21:25.46 I Painting RallyState 428
+2011.09.08 21:25.46 I State: RallyState 429
+2011.09.08 21:25.46 I Painting RallyState 429
+2011.09.08 21:25.46 I State: RallyState 430
+2011.09.08 21:25.46 I Painting RallyState 430
+2011.09.08 21:25.46 I State: RallyState 431
+2011.09.08 21:25.46 I Painting RallyState 431
+2011.09.08 21:25.46 I State: RallyState 432
+2011.09.08 21:25.46 I Painting RallyState 432
+2011.09.08 21:25.46 I State: RallyState 433
+2011.09.08 21:25.46 I Painting RallyState 433
+2011.09.08 21:25.46 I State: RallyState 434
+2011.09.08 21:25.46 I Painting RallyState 434
+2011.09.08 21:25.46 I State: RallyState 435
+2011.09.08 21:25.46 I Painting RallyState 435
+2011.09.08 21:25.46 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 265.5830476235414, 162.86301099922704, 22.810000000000002]
+2011.09.08 21:25.46 I State: RallyState 436
+2011.09.08 21:25.46 I Painting RallyState 436
+2011.09.08 21:25.46 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 274.08169192493875, 148.2062085135299, 23.310000000000002]
+2011.09.08 21:25.47 I State: RallyState 437
+2011.09.08 21:25.47 I Painting RallyState 437
+2011.09.08 21:25.47 I State: RallyState 438
+2011.09.08 21:25.47 I Painting RallyState 438
+2011.09.08 21:25.47 I State: RallyState 439
+2011.09.08 21:25.47 I Painting RallyState 439
+2011.09.08 21:25.47 I State: RallyState 440
+2011.09.08 21:25.47 I Painting RallyState 440
+2011.09.08 21:25.47 I State: RallyState 441
+2011.09.08 21:25.47 I Painting RallyState 441
+2011.09.08 21:25.47 I State: RallyState 442
+2011.09.08 21:25.47 I Painting RallyState 442
+2011.09.08 21:25.47 I State: RallyState 443
+2011.09.08 21:25.47 I Painting RallyState 443
+2011.09.08 21:25.47 I State: RallyState 444
+2011.09.08 21:25.47 I Painting RallyState 444
+2011.09.08 21:25.47 I State: RallyState 445
+2011.09.08 21:25.47 I Painting RallyState 445
+2011.09.08 21:25.47 I State: RallyState 446
+2011.09.08 21:25.47 I Painting RallyState 446
+2011.09.08 21:25.48 I State: RallyState 447
+2011.09.08 21:25.48 I Painting RallyState 447
+2011.09.08 21:25.48 I State: RallyState 448
+2011.09.08 21:25.48 I Painting RallyState 448
+2011.09.08 21:25.48 I State: RallyState 449
+2011.09.08 21:25.48 I Painting RallyState 449
+2011.09.08 21:25.48 I State: RallyState 450
+2011.09.08 21:25.48 I Painting RallyState 450
+2011.09.08 21:25.48 I State: RallyState 451
+2011.09.08 21:25.48 I Painting RallyState 451
+2011.09.08 21:25.48 I State: RallyState 452
+2011.09.08 21:25.48 I Painting RallyState 452
+2011.09.08 21:25.48 I State: RallyState 453
+2011.09.08 21:25.48 I Painting RallyState 453
+2011.09.08 21:25.48 I State: RallyState 454
+2011.09.08 21:25.48 I Painting RallyState 454
+2011.09.08 21:25.48 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 254.7998723544025, 160.47064959009913, 19.060000000000002]
+2011.09.08 21:25.48 I State: RallyState 455
+2011.09.08 21:25.48 I Painting RallyState 455
+2011.09.08 21:25.48 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 243.7886367095561, 148.3553997987078, 19.810000000000002]
+2011.09.08 21:25.48 I State: RallyState 456
+2011.09.08 21:25.48 I Painting RallyState 456
+2011.09.08 21:25.49 I State: RallyState 457
+2011.09.08 21:25.49 I Painting RallyState 457
+2011.09.08 21:25.49 I State: RallyState 458
+2011.09.08 21:25.49 I Painting RallyState 458
+2011.09.08 21:25.49 I Total frames: 500
+2011.09.08 21:25.49 I Time/frame:   10598396 ns
+2011.09.08 21:25.49 I Frames/s:   94
+2011.09.08 21:25.49 I State: RallyState 459
+2011.09.08 21:25.49 I Painting RallyState 459
+2011.09.08 21:25.49 I State: RallyState 460
+2011.09.08 21:25.49 I Painting RallyState 460
+2011.09.08 21:25.49 I State: RallyState 461
+2011.09.08 21:25.49 I Painting RallyState 461
+2011.09.08 21:25.49 I State: RallyState 462
+2011.09.08 21:25.49 I Painting RallyState 462
+2011.09.08 21:25.49 I State: RallyState 463
+2011.09.08 21:25.49 I Painting RallyState 463
+2011.09.08 21:25.49 I State: RallyState 464
+2011.09.08 21:25.49 I Painting RallyState 464
+2011.09.08 21:25.49 I State: RallyState 465
+2011.09.08 21:25.49 I Painting RallyState 465
+2011.09.08 21:25.49 I State: RallyState 466
+2011.09.08 21:25.49 I Painting RallyState 466
+2011.09.08 21:25.50 I State: RallyState 467
+2011.09.08 21:25.50 I Painting RallyState 467
+2011.09.08 21:25.50 I State: RallyState 468
+2011.09.08 21:25.50 I Painting RallyState 468
+2011.09.08 21:25.50 I State: RallyState 469
+2011.09.08 21:25.50 I Painting RallyState 469
+2011.09.08 21:25.50 I State: RallyState 470
+2011.09.08 21:25.50 I Painting RallyState 470
+2011.09.08 21:25.50 I State: RallyState 471
+2011.09.08 21:25.50 I Painting RallyState 471
+2011.09.08 21:25.50 I State: RallyState 472
+2011.09.08 21:25.50 I Painting RallyState 472
+2011.09.08 21:25.50 I State: RallyState 473
+2011.09.08 21:25.50 I Painting RallyState 473
+2011.09.08 21:25.50 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 261.6051549470947, 163.04660206449242, 16.310000000000002]
+2011.09.08 21:25.50 I State: RallyState 474
+2011.09.08 21:25.50 I Painting RallyState 474
+2011.09.08 21:25.50 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 273.3617611033159, 150.93859787230195, 17.060000000000002]
+2011.09.08 21:25.50 I State: RallyState 475
+2011.09.08 21:25.50 I Painting RallyState 475
+2011.09.08 21:25.51 I State: RallyState 476
+2011.09.08 21:25.51 I Painting RallyState 476
+2011.09.08 21:25.51 I State: RallyState 477
+2011.09.08 21:25.51 I Painting RallyState 477
+2011.09.08 21:25.51 I State: RallyState 478
+2011.09.08 21:25.51 I Painting RallyState 478
+2011.09.08 21:25.51 I State: RallyState 479
+2011.09.08 21:25.51 I Painting RallyState 479
+2011.09.08 21:25.51 I State: RallyState 480
+2011.09.08 21:25.51 I Painting RallyState 480
+2011.09.08 21:25.51 I State: RallyState 481
+2011.09.08 21:25.51 I Painting RallyState 481
+2011.09.08 21:25.51 I State: RallyState 482
+2011.09.08 21:25.51 I Painting RallyState 482
+2011.09.08 21:25.51 I State: RallyState 483
+2011.09.08 21:25.51 I Painting RallyState 483
+2011.09.08 21:25.51 I State: RallyState 484
+2011.09.08 21:25.51 I Painting RallyState 484
+2011.09.08 21:25.52 I State: RallyState 485
+2011.09.08 21:25.52 I Painting RallyState 485
+2011.09.08 21:25.52 I State: RallyState 486
+2011.09.08 21:25.52 I Painting RallyState 486
+2011.09.08 21:25.52 I State: RallyState 487
+2011.09.08 21:25.52 I Painting RallyState 487
+2011.09.08 21:25.52 I State: RallyState 488
+2011.09.08 21:25.52 I Painting RallyState 488
+2011.09.08 21:25.52 I State: RallyState 489
+2011.09.08 21:25.52 I Painting RallyState 489
+2011.09.08 21:25.52 I Sending match state to: 0
+2011.09.08 21:25.52 I State: RallyState 490
+2011.09.08 21:25.52 I Painting RallyState 490
+2011.09.08 21:25.52 I State: RallyState 491
+2011.09.08 21:25.52 I Painting RallyState 491
+2011.09.08 21:25.52 I State: RallyState 492
+2011.09.08 21:25.52 I Painting RallyState 492
+2011.09.08 21:25.52 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 253.12547528714163, 160.3451527412222, 13.560000000000002]
+2011.09.08 21:25.52 I State: RallyState 493
+2011.09.08 21:25.52 I Painting RallyState 493
+2011.09.08 21:25.52 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 244.05517148800791, 146.41980220428596, 14.310000000000002]
+2011.09.08 21:25.52 I State: RallyState 494
+2011.09.08 21:25.52 I Painting RallyState 494
+2011.09.08 21:25.53 I State: RallyState 495
+2011.09.08 21:25.53 I Painting RallyState 495
+2011.09.08 21:25.53 I State: RallyState 496
+2011.09.08 21:25.53 I Painting RallyState 496
+2011.09.08 21:25.53 I State: RallyState 497
+2011.09.08 21:25.53 I Painting RallyState 497
+2011.09.08 21:25.53 I State: RallyState 498
+2011.09.08 21:25.53 I Painting RallyState 498
+2011.09.08 21:25.53 I State: RallyState 499
+2011.09.08 21:25.53 I Painting RallyState 499
+2011.09.08 21:25.53 I State: RallyState 500
+2011.09.08 21:25.53 I Painting RallyState 500
+2011.09.08 21:25.53 I Giving 2 points to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 159.69318613951233, 121.17536520465059, 13.560000000000002] for random checkpoint0
+2011.09.08 21:25.53 I State: RallyState 501
+2011.09.08 21:25.53 I Painting RallyState 501
+2011.09.08 21:25.53 I State: RallyState 502
+2011.09.08 21:25.53 I Painting RallyState 502
+2011.09.08 21:25.53 I State: RallyState 503
+2011.09.08 21:25.53 I Painting RallyState 503
+2011.09.08 21:25.53 I State: RallyState 504
+2011.09.08 21:25.53 I Painting RallyState 504
+2011.09.08 21:25.54 I State: RallyState 505
+2011.09.08 21:25.54 I Painting RallyState 505
+2011.09.08 21:25.54 I State: RallyState 506
+2011.09.08 21:25.54 I Painting RallyState 506
+2011.09.08 21:25.54 I State: RallyState 507
+2011.09.08 21:25.54 I Painting RallyState 507
+2011.09.08 21:25.54 I State: RallyState 508
+2011.09.08 21:25.54 I Painting RallyState 508
+2011.09.08 21:25.54 I State: RallyState 509
+2011.09.08 21:25.54 I Painting RallyState 509
+2011.09.08 21:25.54 I State: RallyState 510
+2011.09.08 21:25.54 I Painting RallyState 510
+2011.09.08 21:25.54 I State: RallyState 511
+2011.09.08 21:25.54 I Painting RallyState 511
+2011.09.08 21:25.54 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 261.69989225986524, 161.7038636696081, 10.810000000000002]
+2011.09.08 21:25.54 I State: RallyState 512
+2011.09.08 21:25.54 I Painting RallyState 512
+2011.09.08 21:25.54 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 274.06652336026355, 150.4573260726869, 11.560000000000002]
+2011.09.08 21:25.54 I State: RallyState 513
+2011.09.08 21:25.54 I Painting RallyState 513
+2011.09.08 21:25.55 I State: RallyState 514
+2011.09.08 21:25.55 I Painting RallyState 514
+2011.09.08 21:25.55 I State: RallyState 515
+2011.09.08 21:25.55 I Painting RallyState 515
+2011.09.08 21:25.55 I State: RallyState 516
+2011.09.08 21:25.55 I Painting RallyState 516
+2011.09.08 21:25.55 I State: RallyState 517
+2011.09.08 21:25.55 I Painting RallyState 517
+2011.09.08 21:25.55 I State: RallyState 518
+2011.09.08 21:25.55 I Painting RallyState 518
+2011.09.08 21:25.55 I State: RallyState 519
+2011.09.08 21:25.55 I Painting RallyState 519
+2011.09.08 21:25.55 I State: RallyState 520
+2011.09.08 21:25.55 I Painting RallyState 520
+2011.09.08 21:25.55 I State: RallyState 521
+2011.09.08 21:25.55 I Painting RallyState 521
+2011.09.08 21:25.55 I State: RallyState 522
+2011.09.08 21:25.55 I Painting RallyState 522
+2011.09.08 21:25.55 I State: RallyState 523
+2011.09.08 21:25.55 I Painting RallyState 523
+2011.09.08 21:25.55 I State: RallyState 524
+2011.09.08 21:25.55 I Painting RallyState 524
+2011.09.08 21:25.56 I State: RallyState 525
+2011.09.08 21:25.56 I Painting RallyState 525
+2011.09.08 21:25.56 I ----- Frames: 600
+2011.09.08 21:25.56 I ----- Time/frame:   14077820 ns
+2011.09.08 21:25.56 I ----- Frames/s:   71
+2011.09.08 21:25.56 I State: RallyState 526
+2011.09.08 21:25.56 I Painting RallyState 526
+2011.09.08 21:25.56 I State: RallyState 527
+2011.09.08 21:25.56 I Painting RallyState 527
+2011.09.08 21:25.56 I State: RallyState 528
+2011.09.08 21:25.56 I Painting RallyState 528
+2011.09.08 21:25.56 I State: RallyState 529
+2011.09.08 21:25.56 I Painting RallyState 529
+2011.09.08 21:25.56 I State: RallyState 530
+2011.09.08 21:25.56 I Painting RallyState 530
+2011.09.08 21:25.56 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 253.0143574909482, 160.0194788554387, 8.060000000000002]
+2011.09.08 21:25.56 I State: RallyState 531
+2011.09.08 21:25.56 I Painting RallyState 531
+2011.09.08 21:25.56 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 244.29557222062135, 145.89549950733792, 8.810000000000002]
+2011.09.08 21:25.56 I State: RallyState 532
+2011.09.08 21:25.56 I Painting RallyState 532
+2011.09.08 21:25.56 I Give fuel: 1 to CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 240.10384113702446, 130.887777175637, 9.560000000000002]
+2011.09.08 21:25.57 I State: RallyState 533
+2011.09.08 21:25.57 I Painting RallyState 533
+2011.09.08 21:25.57 I State: RallyState 534
+2011.09.08 21:25.57 I Painting RallyState 534
+2011.09.08 21:25.57 I Removing fuel: 10.0 from CarUI [Player: #	09	Checkpointer	Sample	 [ineligable]	Sample[com.ibm.coderally.sample.CheckpointDriver09], 238.94217525249235, 50.55574425716258, 0.0]
+2011.09.08 21:25.57 I Removing fuel: 10.0 from CarUI [Player: #	97	Chris	Java Class	Logic[C:\cygwin\home\chris\workspace\Game], 246.10068451276763, 103.97348749340381, 10.060000000000002]
+2011.09.08 21:25.57 I State: RallyState 535
+2011.09.08 21:25.57 I Painting RallyState 535
+2011.09.08 21:25.57 I State: RallyState 536
+2011.09.08 21:25.57 I Painting RallyState 536
+2011.09.08 21:25.57 I State: RallyState 537
+2011.09.08 21:25.57 I Painting RallyState 537
+2011.09.08 21:25.57 I State: RallyState 538
+2011.09.08 21:25.57 I Painting RallyState 538
+2011.09.08 21:25.57 I State: RallyState 539
+2011.09.08 21:25.57 I Painting RallyState 539
+2011.09.08 21:25.57 I State: RallyState 540
+2011.09.08 21:25.57 I Painting RallyState 540
+2011.09.08 21:25.57 I State: RallyState 541
+2011.09.08 21:25.57 I Painting RallyState 541
+2011.09.08 21:25.57 I State: RallyState 542
+2011.09.08 21:25.57 I Painting RallyState 542
+2011.09.08 21:25.58 I State: RallyState 543
+2011.09.08 21:25.58 I Painting RallyState 543
+2011.09.08 21:25.58 I State: RallyState 544
+2011.09.08 21:25.58 I Painting RallyState 544
+2011.09.08 21:25.58 I State: RallyState 545
+2011.09.08 21:25.58 I Painting RallyState 545
+2011.09.08 21:25.58 I State: RallyState 546
+2011.09.08 21:25.58 I Painting RallyState 546
+2011.09.08 21:25.58 I State: RallyState 547
+2011.09.08 21:25.58 I Painting RallyState 547
+2011.09.08 21:25.58 I State: RallyState 548
+2011.09.08 21:25.58 I Painting RallyState 548
+2011.09.08 21:25.58 I State: RallyState 549
+2011.09.08 21:25.58 I Painting RallyState 549
+2011.09.08 21:25.58 I State: RallyState 550
+2011.09.08 21:25.58 I Painting RallyState 550
+2011.09.08 21:25.58 I State: RallyState 551
+2011.09.08 21:25.58 I Painting RallyState 551
+2011.09.08 21:25.58 I State: RallyState 552
+2011.09.08 21:25.58 I Painting RallyState 552
+2011.09.08 21:25.59 I State: RallyState 553
+2011.09.08 21:25.59 I Painting RallyState 553
+2011.09.08 21:25.59 I State: RallyState 554
+2011.09.08 21:25.59 I Painting RallyState 554
+2011.09.08 21:25.59 I State: RallyState 555
+2011.09.08 21:25.59 I Painting RallyState 555
+2011.09.08 21:25.59 I State: RallyState 556
+2011.09.08 21:25.59 I Painting RallyState 556
+2011.09.08 21:25.59 I State: RallyState 557
+2011.09.08 21:25.59 I Painting RallyState 557
+2011.09.08 21:25.59 I State: RallyState 558
+2011.09.08 21:25.59 I Painting RallyState 558
+2011.09.08 21:25.59 I Total frames: 600
+2011.09.08 21:25.59 I Time/frame:   10452608 ns
+2011.09.08 21:25.59 I Frames/s:   95
+2011.09.08 21:25.59 I State: RallyState 559
+2011.09.08 21:25.59 I Painting RallyState 559
+2011.09.08 21:25.59 I State: RallyState 560
+2011.09.08 21:25.59 I Painting RallyState 560
+2011.09.08 21:25.59 I State: RallyState 561
+2011.09.08 21:25.59 I Painting RallyState 561
+2011.09.08 21:25.59 I State: RallyState 562
+2011.09.08 21:25.59 I Painting RallyState 562
+2011.09.08 21:26.00 I State: RallyState 563
+2011.09.08 21:26.00 I Painting RallyState 563
+2011.09.08 21:26.00 I State: RallyState 564
+2011.09.08 21:26.00 I Painting RallyState 564
+2011.09.08 21:26.00 I State: RallyState 565
+2011.09.08 21:26.00 I Painting RallyState 565
+2011.09.08 21:26.00 I State: RallyState 566
+2011.09.08 21:26.00 I Painting RallyState 566
+2011.09.08 21:26.00 I State: RallyState 567
+2011.09.08 21:26.00 I Painting RallyState 567
+2011.09.08 21:26.00 I State: RallyState 568
+2011.09.08 21:26.00 I Painting RallyState 568
+2011.09.08 21:26.00 I State: RallyState 569
+2011.09.08 21:26.00 I Painting RallyState 569
+2011.09.08 21:26.00 I State: RallyState 570
+2011.09.08 21:26.00 I Painting RallyState 570
+2011.09.08 21:26.00 I State: RallyState 571
+2011.09.08 21:26.00 I Painting RallyState 571
+2011.09.08 21:26.00 I State: RallyState 572
+2011.09.08 21:26.00 I Painting RallyState 572
+2011.09.08 21:26.01 I State: RallyState 573
+2011.09.08 21:26.01 I Painting RallyState 573
+2011.09.08 21:26.01 I State: RallyState 574
+2011.09.08 21:26.01 I Painting RallyState 574
+2011.09.08 21:26.01 I State: RallyState 575
+2011.09.08 21:26.01 I Painting RallyState 575
+2011.09.08 21:26.01 I State: RallyState 576
+2011.09.08 21:26.01 I Painting RallyState 576
+2011.09.08 21:26.01 I State: RallyState 577
+2011.09.08 21:26.01 I Painting RallyState 577
+2011.09.08 21:26.01 I State: RallyState 578
+2011.09.08 21:26.01 I Painting RallyState 578
+2011.09.08 21:26.01 I State: RallyState 579
+2011.09.08 21:26.01 I Painting RallyState 579
+2011.09.08 21:26.01 I State: RallyState 580
+2011.09.08 21:26.01 I Painting RallyState 580
+2011.09.08 21:26.01 I State: RallyState 581
+2011.09.08 21:26.01 I Painting RallyState 581
+2011.09.08 21:26.02 I State: RallyState 582
+2011.09.08 21:26.02 I Painting RallyState 582
+2011.09.08 21:26.02 I State: RallyState 583
+2011.09.08 21:26.02 I Painting RallyState 583
+2011.09.08 21:26.02 I State: RallyState 584
+2011.09.08 21:26.02 I Painting RallyState 584
+2011.09.08 21:26.02 I State: RallyState 585
+2011.09.08 21:26.02 I Painting RallyState 585
+2011.09.08 21:26.02 I State: RallyState 586
+2011.09.08 21:26.02 I Painting RallyState 586
+2011.09.08 21:26.02 I State: RallyState 587
+2011.09.08 21:26.02 I Painting RallyState 587
+2011.09.08 21:26.02 I State: RallyState 588
+2011.09.08 21:26.02 I Painting RallyState 588
+2011.09.08 21:26.02 I State: RallyState 589
+2011.09.08 21:26.02 I Painting RallyState 589
+2011.09.08 21:26.02 I Sending match state to: 0
+2011.09.08 21:26.02 I State: RallyState 590
+2011.09.08 21:26.02 I Painting RallyState 590
+2011.09.08 21:26.02 I State: RallyState 591
+2011.09.08 21:26.02 I Painting RallyState 591
+2011.09.08 21:26.03 I Painting RallyState 591
+2011.09.08 21:26.03 I Painting RallyState 591
+2011.09.08 21:26.03 I State: RallyState 592
+2011.09.08 21:26.03 I State: RallyState 593
+2011.09.08 21:26.03 I Painting RallyState 593
+2011.09.08 21:26.03 I State: RallyState 594
+2011.09.08 21:26.03 I Painting RallyState 594
+2011.09.08 21:26.03 I Painting RallyState 594
+2011.09.08 21:26.03 I State: RallyState 595
+2011.09.08 21:26.03 I Painting RallyState 595
+2011.09.08 21:26.03 I State: RallyState 596
+2011.09.08 21:26.03 I Painting RallyState 596
+2011.09.08 21:26.03 I State: RallyState 597
+2011.09.08 21:26.03 I Painting RallyState 597

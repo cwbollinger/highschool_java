@@ -1,0 +1,18 @@
+
+public class Adventurer {
+	int x = 5;
+	int y = 5;
+	
+	public void left() {
+		--x;
+	}
+	public void right() {
+		++x;
+	}
+	public void up() {
+		--y;
+	}
+	public void down() {
+		++y;
+	}
+}

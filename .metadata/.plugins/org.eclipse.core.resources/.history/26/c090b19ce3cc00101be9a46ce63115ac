@@ -1,0 +1,87 @@
+/* 
+ * AP(r) Computer Science GridWorld Case Study:
+ * Copyright(c) 2005-2006 Cay S. Horstmann (http://horstmann.com)
+ *
+ * This code is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation.
+ *
+ * This code is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * @author Cay Horstmann
+ */
+
+import info.gridworld.actor.ActorWorld;
+import info.gridworld.actor.Bug;
+import info.gridworld.actor.Rock;
+import java.awt.Color;
+import info.gridworld.grid.UnboundedGrid;
+
+
+/**
+ * This class runs a world that contains a bug and a rock, added at random
+ * locations. Click on empty locations to add additional actors. Click on
+ * populated locations to invoke methods on their occupants. <br />
+ * To build your own worlds, define your own actors and a runner class. See the
+ * BoxBugRunner (in the boxBug folder) for an example. <br />
+ * This class is not tested on the AP CS A and AB exams.
+ */
+public class BugRunner
+{
+  public static void moveBug(Bug bug, int n)
+  {
+	
+	while(n > 0) {
+	  if(bug.canMove()) {
+        bug.move();
+	  }
+	  else{
+		bug.turn();
+	  }
+	  n--;
+	}
+  }
+  
+  public static void randomBug(Bug bug, int n) 
+  {
+	int rand;
+	
+	for(; n > 0; n--) {
+      rand = Random.diceRoll(4);
+      bug.setDirection(90*(rand-1));
+      if(bug.canMove()) {
+        bug.move();
+      }
+	}
+  }
+  public static void colorBug(Bug bug)
+  {
+    int x = bug.getLocation().getCol();
+    while(x > 255) {
+      x -= 255;
+    }
+    int y = bug.getLocation().getRow();
+    while(y > 255) {
+      y -= 255;
+    }
+    Color temp = new Color(y, x, 0);
+    bug.setColor(temp);
+  }
+  public static void main(String[] args)
+  {
+    ActorWorld world = new ActorWorld(new UnboundedGrid());
+    Bug redBug = new Bug(Color.red);
+    Bug blueBug = new Bug(Color.cyan);
+    world.add(redBug);
+    world.add(blueBug);
+    world.add(new Rock());
+    world.add(new Rock());
+    world.add(new Rock());
+    world.show();
+    colorBug(redBug);
+    colorBug(blueBug);
+  }   
+}

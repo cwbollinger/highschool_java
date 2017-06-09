@@ -1,0 +1,4 @@
+commit_dialog_history_messages=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<messages>\r\n<message>more changes to fix merging issues</message>\r\n<message>fix for .class file commits, DO NOT COMMIT CLASS FILES IN THE FUTURE</message>\r\n<message>painBox fixed again</message>\r\n<message>Animation flipping added</message>\r\n<message>PainBox fixed, damage level used to determine knockback</message>\r\n<message>update method working</message>\r\n<message>update method added to Player</message>\r\n<message>Double jump working</message>\r\n<message>double jumping added, still buggy</message>\r\n<message>positional reset added when you fly off the edge of the map</message>\r\n</messages>
+eclipse.preferences.version=1
+resourcehistory_graph_split=500,500
+resourcehistory_rev_split=700,300

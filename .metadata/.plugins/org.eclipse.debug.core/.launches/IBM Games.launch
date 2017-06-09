@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.ibm.games.launchConfigurationType">
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Game"/>
+</launchConfiguration>

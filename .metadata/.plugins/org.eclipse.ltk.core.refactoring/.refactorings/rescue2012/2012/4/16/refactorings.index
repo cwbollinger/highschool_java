@@ -1,0 +1,14 @@
+1334616291658	Copy compilation unit
+1334705364794	Rename field 'newNorth'
+1334705394115	Rename method 'setNewNorth'
+1334706579204	Rename local variable 'fixedCReading'
+1334709012004	Rename field 'compDir'
+1334806611073	Introduce indirection for 'playTone'
+1334841522196	Rename field 'eopd'
+1334854580229	Move compilation unit
+1334854795509	Encapsulate field 'gridDone'
+1334856696089	Rename field 'doorHeading'
+1334867024915	Rename field 'theshUS'
+1334891941771	Rename method 'findCanCoarse'
+1334974881237	Copy compilation unit
+1334983559765	Rename local variable 'lowDiff'

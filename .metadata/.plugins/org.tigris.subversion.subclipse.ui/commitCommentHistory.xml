@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Final commits post-expo</CommitComment>
+	<CommitComment>Expo Commit</CommitComment>
+	<CommitComment>Final Changes for Expo</CommitComment>
+	<CommitComment>Striker is now working properly again. FollowBall is improved, and the transition to StatePointToGoal is smoother.</CommitComment>
+	<CommitComment>Freezing bug fixed, hopefully. Still too much overcompensation in StateFollowBall.</CommitComment>
+	<CommitComment>COMPETITON VERSION OF CODE.
+REVERT POINT</CommitComment>
+	<CommitComment>dual debug/non-debug function working.
+Robots will start state machine differently based on their names.</CommitComment>
+	<CommitComment>Fix debug problems before setting up button to run autonomously</CommitComment>
+	<CommitComment>Fix IR seeker math exception by replacing sqrt loop approximation with real Math square root</CommitComment>
+	<CommitComment>Enable running without bluetooth.  Choose position playing based on brick name.</CommitComment>
+</CommitComments>

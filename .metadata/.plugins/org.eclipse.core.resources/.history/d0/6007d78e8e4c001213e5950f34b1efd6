@@ -1,0 +1,82 @@
+
+public class CalculatePi {
+
+	public double getValue() {
+		int n1, n2;
+		int count = 0;
+		
+		int i;
+		for(i = 0; i < 100; i++) {
+			n1 = (int) Math.round(Math.random()*1000.0);
+			//System.out.println(n1);
+			n2 = (int) Math.round(Math.random()*1000.0);
+			//System.out.println(n2+'\n');
+			if(relPrime(n1, n2)) {
+				//System.out.println("true");
+				count++;
+			} else {
+				//System.out.println("false");
+			}
+		}
+		
+		//System.out.println(count);
+		//System.out.println(i);
+		double probRelPrime = (double) (count/i*1.0);
+		//System.out.println(probRelPrime);
+		
+		double pi = Math.sqrt(6/probRelPrime);
+		return pi;
+	}
+	
+	public boolean relPrime(int n1, int n2) {
+		int r, r_prev;
+		int count;
+		
+		r = 0;
+		
+		if(n1 < n2) {
+			r = n1;
+			r_prev = n2;
+		} else {
+			r_prev = n1;
+			r = n2;
+		}
+		while(true) {
+			count = 0;
+			while((r_prev - count*r) > r) {
+				count++;
+			}
+			r = r_prev - count*r;
+			if(r == 0) {
+				if(r_prev == 1) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+		}
+	}
+	
+//    a = q0 b + r0
+//    b = q1 r0 + r1
+//    r0 = q2 r1 + r2
+//    r1 = q3 r2 + r3
+
+	
+//	private boolean relPrime(int n1, int n2) {
+//		double q1 = (double) n1/n2;
+//		double q2 = (double) n2/n1;
+//		if((q1 == Math.round(q1)) || (q2 == Math.round(q2))) {
+//			System.out.println(n1+", "+n2+": not relatively prime");
+//			return false;
+//		} else {
+//			System.out.println(n1+", "+n2+": relatively prime");
+//
+//			return true;
+//		}
+//	}
+	
+//	public static void main(String[] args) {
+//		System.out.println(relPrime(5,5));
+//	}
+}
